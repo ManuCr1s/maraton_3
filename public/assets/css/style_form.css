@@ -1,0 +1,178 @@
+/*------------------------ start header icon ----------------------*/
+.button{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 3%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.button--orange{
+    color: #f3893a;
+}
+.icon{
+    font-size:20px;
+    padding: 0 10px;
+}
+.list{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 3%;
+}
+.icon-button{
+    font-size: 20px;
+    color: #f3893a;
+}
+.item__list{
+    margin-right: 5%;
+    padding-right: 5%;
+}
+.separator{
+    margin: 0;
+}
+/*------------------------- end header icon -------------------------*/
+/*------------------------ start menu item  ----------------------*/
+.logo__icon{
+    font-size: 4em;
+    background: linear-gradient(#e65336,#faa33d);
+    margin: 0 5% 0 0;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.title{
+    margin: 0 5%;
+}
+.title__secondary{
+    font-size: 11px;
+    color: #faa33d;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.title__main{
+    color: #ec6f38; 
+    line-height: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.title__main--main{
+    line-height: 20px;
+    letter-spacing: 14px;
+    color: #ec6f38;
+    font-weight: bolder;
+}
+/*------------------------- end menu icon -------------------------*/
+/*------------------------ start menu item  ----------------------*/
+.nav-link__main{
+    font-size: 14px;
+    font-weight: bold;
+    color: #797d7f;
+    letter-spacing: 2px;
+}
+.nav-link__secondary{
+    font-size: 10px;
+    color: #faa33d;
+}
+/*------------------------- end menu icon -------------------------*/
+/*END PAGE: HOME HEADER */
+/*START BODY: HOME*/
+.icon-body{
+    color: #f3893a;
+}
+.text-body{
+    font-size: 16px;
+    font-weight: 600;
+    color: #797d7f;
+    letter-spacing: 5px;
+    margin-bottom: 3%;
+}
+.simply-section{
+    width: 150px;
+    padding:3%;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    margin: 0 1.5%;
+}
+.simply-amount{
+    text-align: center;
+    display: block;
+    color: #ec6f38;
+    font-size: 30px;
+    line-height: 35px;
+}
+.simply-word{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+.text-body_max{
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #797d7f;
+}
+.text-body_date{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+/*------------------------ level menu item  ----------------------*/
+.text-table{
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.text-table_detail{
+    color: #63686a;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.text-table_info{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #63686a;
+}
+.icon-subtitle{
+    font-size: 18px;
+    color: #faa33d;
+    margin: 0 2% 0 0;
+}
+
+/*------------------------- level menu icon -------------------------*/
+/*------------------------- start footer ----------------------------------*/
+.main-footer{
+    color: white;
+    background-blend-mode: overlay;
+    background-image: url('../img/maratonpasco_version5.jpg');
+    background-color: #434343;   
+    background-position: center; 
+    height:30vw;
+}
+.text-footer_secondary{
+    font-size: 16px;
+    font-weight: 500;
+    color: #faa33d;
+    letter-spacing: 5px;
+}
+.text-footer_main{
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.secondary-footer{
+    background-color: #252828;
+    color: #faa33d;
+    font-weight: 500;
+    letter-spacing: 5px;
+    justify-content: center;
+    font-size: 12px;
+}
+/*--------------------------- end footer ----------------------------------*/
+/*END BODY: HOME*/
