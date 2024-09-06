@@ -1,0 +1,10 @@
+import { chainLocation, chainSelected,loadDate,onlyNumbers } from './functions';
+import route from './route';
+import APP_INPUT from './form';
+chainSelected(APP_INPUT.level,APP_INPUT.gender);
+chainLocation(APP_INPUT.region,APP_INPUT.province,route.province);
+chainLocation(APP_INPUT.province,APP_INPUT.district,route.district);
+loadDate(APP_INPUT.country,route.country);
+loadDate(APP_INPUT.region,route.region);
+APP_INPUT.number.on('keypress',onlyNumbers);
+APP_INPUT.phone.on('keypress',onlyNumbers);

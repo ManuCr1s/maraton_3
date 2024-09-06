@@ -8,8 +8,6 @@
             <x-navs.secondary/>
             <x-forms.wizard/> 
         </div>
+       
     </div>
-@endsection
-@section('footer')
-<script src="{{asset('assets/js/scripts/wizard.js')}}"></script>
 @endsection

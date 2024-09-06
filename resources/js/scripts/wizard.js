@@ -1,16 +1,22 @@
-
+import {validateForm,sendForm} from './validate';
+import APP_INPUT from './form';
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 $(".next").click(function(){
-	if(animating) return false;
-	animating = true;
-	
-	current_fs = $(this).parent();
-	next_fs = $(this).parent().next();
-	
-	//activate next step on progressbar using the index of next_fs
+
+	let validate = validateForm(APP_INPUT);
+	if(validate.status){
+		alert(validate.message);
+	}else{
+		if(animating) return false;
+		animating = true;
+		
+		current_fs = $(this).parent();
+		next_fs = $(this).parent().next();
+
+		//activate next step on progressbar using the index of next_fs
 	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	
 	//show the next fieldset
@@ -39,6 +45,8 @@ $(".next").click(function(){
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'
 	});
+	}
+	
 });
 
 $(".previous").click(function(){
@@ -76,6 +84,11 @@ $(".previous").click(function(){
 	});
 });
 
-$(".submit").click(function(){
+$(".submit").click(function(e){
+	e.preventDefault();
+	let validate = sendForm(APP_INPUT);
+	if(validate.status){
+		alert(validate.message);
+	}
 	return false;
 })

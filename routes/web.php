@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\RegisterController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\CountryController;
+use App\Http\Controllers\RegionControler;
+use App\Http\Controllers\ProvinceController;
+use App\Http\Controllers\DistrictController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +21,16 @@ Route::controller(RegisterController::class)->group(function(){
     Route::get('/','index')->name('home');
     Route::get('/form','form')->name('form');
 });
+Route::controller(CountryController::class)->group(function(){
+    Route::post('/country','index')->name('country');
+});
+Route::controller(RegionControler::class)->group(function(){
+    Route::post('/region','index')->name('region');
+});
+Route::controller(ProvinceController::class)->group(function(){
+    Route::post('/province','store')->name('province');
+});
+Route::controller(DistrictController::class)->group(function(){
+    Route::post('/district','store')->name('district');
+});
+

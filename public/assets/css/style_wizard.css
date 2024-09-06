@@ -106,23 +106,21 @@
     display: none;
 }
 .action-button {
-    width: 20%;
     background: rgba(230, 83, 54);
     font-weight: bold;
     color: white;
     border: 0 none;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 2% 5%;
     margin: 10px 5px;
 }
 .action-button-previous {
-    width: 20%;
     background: #f2c1ac;
     font-weight: bold;
     color: white;
     border: 0 none;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 2% 5%;
     margin: 10px 5px;
 }
 

@@ -6,6 +6,7 @@
     <title>{{env('APP_NAME')}}</title>
     @vite(['resources/css/app.css'])
     @yield('header')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
     @yield('container')
