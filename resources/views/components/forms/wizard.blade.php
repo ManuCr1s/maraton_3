@@ -122,7 +122,7 @@
                 <h2 class="form-step__title">LUGAR DE PROCEDENCIA</h2>
                 <h3 class="form-step__subtitle">Seleccione su lugar de procedencia</h3>
                 <div class="row text-left">
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="location">
                             <div class="d-flex justify-content-center">
                                 <i class="fa-solid fa-map-location-dot form-step__icon"></i>
                             </div>

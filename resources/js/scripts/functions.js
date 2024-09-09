@@ -21,6 +21,15 @@ export function chainSelected(a,b) {
             }
      });
 }
+export function chainCountryLocation(a,b){
+    a.on('change',function(){
+        if(a.val()!=='1'){
+            b.addClass('d-none');
+        }else{
+            b.removeClass('d-none')
+        }
+    });
+}
 export function chainLocation(param1,param2,url){
     param1.on('change',function(){
         let datos = {'valor':param1.val()};
