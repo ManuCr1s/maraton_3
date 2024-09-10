@@ -13,7 +13,7 @@
                     <li class="item__list"><i class="fa-brands fa-square-x-twitter icon-button"></i></li>
                 </ul>
                 <a href="" class="button button--orange">
-                    <i class="fa-solid fa-print icon"></i>VERIFICA TU INSCRIPCION
+                    <i class="fa-solid fa-print icon"></i>VERIFICA TU INSCRIPCION   
                 </a>                
             </div>
             <hr class="separator">

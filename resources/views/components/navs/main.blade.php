@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light my-3">
     <a class="navbar-brand d-flex" href="{{route('home')}}">
         <i class="fa-solid fa-person-running logo__icon"></i>
         <div class="title">
