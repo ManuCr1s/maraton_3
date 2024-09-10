@@ -41,28 +41,28 @@
                         <div class="col-md-6">
                                         <h6 class="d-flex justify-content-between mb-3 form-step__block"><span><b>CATEGORIAS</b></span><span><b>EDADES</b></span></h6>
                                 <ul class="form-step__list">
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» ELITE VARONES MUJERES</b></span><span><b>Mayores de 18</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
-                                            <small class="text-muted d-flex justify-content-between mb-2"><span><b>» MASTER</b></span><span><b>40 a más</b></span></small>        
+                                        <li class="text-muted my-sm-1 my-md-3">
+                                            <small class="text-muted d-flex justify-content-between"><span><b>» MASTER</b></span><span><b>40 a más</b></span></small>        
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» JUVENILES</b></span><span><b>15 - 16 - 17 años</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» MENORES</b></span><span><b>12 - 13 - 14 años</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» JUNIOR</b></span><span><b>10 - 11 años</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» INFANTIL</b></span><span><b>7 - 8 - 9 años</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» HABILIDADES ESPECIALES</b></span><span><b>Sordo y Mudo</b></span></small>          
                                         </li>
-                                        <li class="text-muted my-3">
+                                        <li class="text-muted my-sm-1 my-md-3">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» HABILIDADES ESPECIALES</b></span><span><b>Visual</b></span></small>          
                                         </li>
                                 </ul>
@@ -101,7 +101,7 @@
                                 </div>
                                 
                         </div>
-                        <div class="form-group col-md-6">    
+                        <div class="col-md-6 d-none">    
                                 <div class="row d-flex justify-content-center">
                                     <i class="fa-solid fa-user-check form-step__icon"></i>
                                 </div> 

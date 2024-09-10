@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-/*basic reset*/
+ /*basic reset*/
 #container{
-    height: 100vh;
+    padding: 5% 0;
     background: rgba(230, 83, 54);
     background: -webkit-linear-gradient(rgba(230, 83, 54), rgba(250, 163, 61));
 }   
@@ -10,97 +10,284 @@
     background: transparent;
     text-align: center;
 }
-/*form styles*/
-.logo__icon{
-    font-size: 4em;
-    background: linear-gradient(#ea9584,#fcc88c);
-    margin: 0 5% 0 0;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.title{
-    margin: 0 5%;
-}
-.title__secondary{
-    font-size: 11px;
-    color: #ffffff;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-.title__main{
-    color: #ffb291; 
-    line-height: 20px;
-    font-weight: bolder;
-    letter-spacing: 5px;
-}
-.title__main--main{
-    line-height: 20px;
-    letter-spacing: 14px;
-    color: #ffb291;
-    font-weight: bolder;
-}
-.title-menu{
-    font-size: 16px;
-    color: rgb(255, 247, 242);
-    letter-spacing: 5px;
-}
+@media screen and (min-width: 50px) and (max-width: 768px) {
+    /*LOGO Y NAVBAR*/
+    .logo__icon{
+        font-size: 2.5em;
+        background: linear-gradient(#ea9584,#fcc88c);
+        margin: 0 5% 0 0;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .title{
+        margin: 0 5%;
+    }
+    .title__secondary{
+        font-size: 9px;
+        color: #ffffff;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+    .title__main{
+        color: #ffb291; 
+        line-height: 12px;
+        font-weight: bolder;
+        letter-spacing: 5px;
+        font-size: 12px;
+    }
+    .title__main--main{
+        line-height: 12px;
+        letter-spacing: 14px;
+        color: #ffb291;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .title-menu{
+        font-size: 15px;
+        color: rgb(255, 247, 242);
+        letter-spacing: 5px;
+    }
+    .navbar-toggler-icon{
+        width: 1em;
+        height: 1em;
+    }
+    /*BARRA DE PROGRESO*/
+    #progressbar {
+        padding: 0;
+        margin-bottom: 30px;
+        overflow: hidden;
+        /*CSS counters to number the steps*/
+        counter-reset: step;
+    }
+    
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size:7px;
+        width: 33.33%;
+        float: left;
+        position: relative;
+        letter-spacing: 3px;
+    }
+    
+    #progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 24px;
+        height: 24px;
+        line-height: 26px;
+        display: block;
+        font-size: 12px;
+        color: #2f2f2f;
+        background: white;
+        border-radius: 25px;
+        margin: 0 auto 10px auto;
+    }
+    
+    /*progressbar connectors*/
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: -50%;
+        top: 9px;
+        z-index: -1; /*put it behind the numbers*/
+    }
+    
+    #progressbar li:first-child:after {
+        /*connector not needed before the first step*/
+        content: none;
+    }
+    
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before, #progressbar li.active:after {
+        background: #717d7e;
+        color: white;
+    }
 
-.form-step{
-    background: white;
-    border: 0 none;
-    border-radius: 0px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
-    /*stacking fieldsets above each other*/
-    position: relative;
+    .form-step{
+        background: white;
+        border: 0 none;
+        border-radius: 0px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 100%;
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+    .form-step__title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #2C3E50;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .form-step__subtitle {
+        font-weight: normal;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .form-step__icon{
+        color: rgba(230, 83, 54);
+        font-size: 50px;
+        padding: 3%;
+        margin: 3%;
+    }
+    
+    .form-step__label{
+        color: #252627;
+        letter-spacing: 3px;
+        font-size: 15x;
+    }
+    .form-step__control{
+        border: 0;
+        border-bottom: 1px solid rgba(230, 83, 54);
+        margin: 0 0 2% 0;
+        border-radius: 0;
+    }
+    .form-step__control:focus{
+        box-shadow: none;
+    }
+    .form-step__list{
+        list-style: none;
+        padding: 0;
+    }
+    .form-step__block{
+        letter-spacing: 5px;
+        color: rgba(230, 83, 54);
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .text-muted{
+        font-size: 9px;
+    }
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
 }
-.form-step__title {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #2C3E50;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+.action-button {
+    background: rgba(230, 83, 54);
     font-weight: bold;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    padding: 2% 5%;
+    margin: 10px 5px;
+}
+.action-button-previous {
+    background: #f2c1ac;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    padding: 2% 5%;
+    margin: 10px 5px;
 }
 
-.form-step__subtitle {
-    font-weight: normal;
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 20px;
+    
 }
-.form-step__icon{
-    color: rgba(230, 83, 54);
-    font-size: 50px;
-    padding: 3%;
-    margin: 3%;
-}
-.form-step__label{
-    color: #252627;
-    letter-spacing: 3px;
-    font-size: 15px;
-}
-.form-step__control{
-    border: 0;
-    border-bottom: 1px solid rgba(230, 83, 54);
-    margin: 0 0 2% 0;
-    border-radius: 0;
-}
-.form-step__control:focus{
-    box-shadow: none;
-}
-.form-step__list{
-    list-style: none;
-    padding: 0;
-}
-.form-step__block{
-    letter-spacing: 5px;
-    color: rgba(230, 83, 54);
-}
+@media screen and (min-width: 769px)  {
+    /*form styles*/
+    .logo__icon{
+        font-size: 4em;
+        background: linear-gradient(#ea9584,#fcc88c);
+        margin: 0 5% 0 0;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .title{
+        margin: 0 5%;
+    }
+    .title__secondary{
+        font-size: 11px;
+        color: #ffffff;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .title__main{
+        color: #ffb291; 
+        line-height: 20px;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+    .title__main--main{
+        line-height: 20px;
+        letter-spacing: 14px;
+        color: #ffb291;
+        font-weight: bolder;
+    }
+    .title-menu{
+        font-size: 16px;
+        color: rgb(255, 247, 242);
+        letter-spacing: 5px;
+    }
+
+    .form-step{
+        background: white;
+        border: 0 none;
+        border-radius: 0px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+    .form-step__title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #2C3E50;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .form-step__subtitle {
+        font-weight: normal;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .form-step__icon{
+        color: rgba(230, 83, 54);
+        font-size: 50px;
+        padding: 3%;
+        margin: 3%;
+    }
+
+    .form-step__label{
+        color: #252627;
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+    .form-step__control{
+        border: 0;
+        border-bottom: 1px solid rgba(230, 83, 54);
+        margin: 0 0 2% 0;
+        border-radius: 0;
+    }
+    .form-step__control:focus{
+        box-shadow: none;
+    }
+    .form-step__list{
+        list-style: none;
+        padding: 0;
+    }
+    .form-step__block{
+        letter-spacing: 5px;
+        color: rgba(230, 83, 54);
+    }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
@@ -183,3 +370,5 @@
 }
 
 
+
+}
