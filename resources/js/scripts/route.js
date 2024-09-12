@@ -1,4 +1,4 @@
-const APP_ROUTE = 'http://172.16.15.139:8081/maraton_v3/public';
+const APP_ROUTE = '';
 const route = {
     country:`${APP_ROUTE}/country`,
     region:`${APP_ROUTE}/region`,

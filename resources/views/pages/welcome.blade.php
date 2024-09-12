@@ -29,15 +29,24 @@
                 </div>
             </div>
             <hr>
+            <br>
             <div class="row justify-content-center">
                 <div class="col-12">
                     <h6 class="text-body_max">FECHA MAXIMA DE INSCRIPCION</h6>
                     <h5 class="text-body_date">8 DE NOVIEMBRE DEL 2024</h5>
                 </div>
             </div>
+            <br>
             <hr>
-            
-            <hr>
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12">
+                        <h6 class="text-body_max">GANADORES</h6>
+                        <h5 class="text-body_date">MARATON MESETA BOMBON 2023</h5>
+                    </div>
+                </div>
+                <x-tables.level/>
+                <br>
+
         </div>
         <div class="row p-5 main-footer">
             <div class="container">
