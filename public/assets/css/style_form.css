@@ -297,9 +297,9 @@
 
 /*------------------------ level menu item  ----------------------*/
 .text-table{
-    font-size: 16px;
     margin: 0;
-    letter-spacing: 4px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 .text-table_detail{
@@ -309,13 +309,13 @@
     text-align: center;
 }
 .text-table_info{
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 2px;
     font-weight: 500;
     color: #63686a;
 }
 .icon-subtitle{
-    font-size: 18px;
+    font-size: 15px;
     color: #faa33d;
     margin: 0 2% 0 0;
 }
