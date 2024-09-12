@@ -48,10 +48,10 @@ class PersonsController extends Controller
                     $person = array('status'=>false,'message'=>'Por favor verifique su conexion a internet');
                 }else if(property_exists($person,'nombres')){
                     $person->status = true;
-                }else if($persona->message == 'dni no valido'){
+                }else if($person->message == 'dni no valido'){
                     $person->status = false;
                     $person->message = 'Por favor ingrese un DNI valido';
-                }else if($persona->message == 'not found'){
+                }else if($person->message == 'not found'){
                     $person->status = false;
                     $person->message = 'Por favor registre sus nombres y apellidos';
                 }
