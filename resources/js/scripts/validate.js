@@ -20,3 +20,27 @@ export function sendForm(objeto){
     if(inputNull(objeto.addresd)&& objeto.addresd.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Direccion'}}
     return {status:false}
 }
+export function searchDni(country,type,number){
+    /*    console.log(url,country,country.val(),type,type.val(),number); */
+       if(country.val() !== '1'){
+           return {
+               'status':false,
+               'message':'Seleccione Pais Peru para buscar su registro'
+           }
+       }
+       if(type.val() !== 'D'){
+           return {
+               'status':false,
+               'message':'Seleccione DNI en tipo Documento'
+           } 
+       }
+       if(number.val().length !== 8){
+           return {
+               'status':false,
+               'message':'Ingrese un numero de documento valido'
+           } 
+       }
+       return {
+        'status':true
+        } 
+}

@@ -1,6 +1,8 @@
-import {validateForm,sendForm} from './validate';
+import {validateForm,sendForm,searchDni} from './validate';
 import APP_INPUT from './form';
+import route from './route';
 import { data } from 'jquery';
+import Swal from 'sweetalert2';
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
@@ -9,7 +11,11 @@ $(".next").click(function(){
 
 	let validate = validateForm(APP_INPUT);
 	if(validate.status){
-		alert(validate.message);
+		Swal.fire({
+			icon: "error",
+			title: 'Upps tenemos un problema',
+			text: validate.message,
+		  })
 	}else{
 		if(animating) return false;
 		animating = true;
@@ -85,11 +91,45 @@ $(".previous").click(function(){
 	});
 });
 
+$('#seachdni').click(function(e){
+	e.preventDefault();
+	let validation = searchDni(APP_INPUT.country,APP_INPUT.type,APP_INPUT.number)
+	if(!validation.status){
+		Swal.fire({
+			icon: "error",
+			title: 'Upps tenemos un problema',
+			text: validation.message,
+		  })
+	}else{
+		$.ajax({
+			url:route.api,
+			type:'POST',
+			data:{
+				number:APP_INPUT.number.val()
+			},
+			success:function(valor){
+				if(valor.status){
+					$('#seachdni').hide();
+					$('#names').removeClass('d-none');
+					APP_INPUT.name.val(valor.nombres);
+					APP_INPUT.lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
+					$('#step-2').removeClass('d-none');
+				}
+				console.log(valor);
+			}
+		})
+	}
+});
+
 $(".submit").click(function(e){
 	e.preventDefault();
 	let validate = sendForm(APP_INPUT);
 	if(validate.status){
-		alert(validate.message);
+		Swal.fire({
+			icon: "error",
+			title: 'Upps tenemos un problema',
+			text: validate.message,
+		  })
 	}else{
 		$.ajax({
 			url:url,

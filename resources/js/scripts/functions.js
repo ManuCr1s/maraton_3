@@ -56,47 +56,7 @@ export function chainLocation(param1,param2,url){
         });
     });
 }
-export function searchDni(a,url,country,type,number,name,nomnam,lastname,step){
-    a.on('click',function(e){
-        e.preventDefault();
-     /*    console.log(url,country,country.val(),type,type.val(),number); */
-        if(country.val() !== '1'){
-            return {
-                'status':false,
-                'message':'Seleccione Pais Peru para buscar su registro'
-            }
-        }
-        if(type.val() !== 'D'){
-            return {
-                'status':false,
-                'message':'Seleccione DNI en tipo Documento'
-            } 
-        }
-        if(number.val().length !== 8){
-            return {
-                'status':false,
-                'message':'Ingrese un numero de documento valido'
-            } 
-        }
-        $.ajax({
-            url:url,
-            type:'POST',
-            data:{
-                number:number.val()
-            },
-            success:function(valor){
-                if(valor.status){
-                    a.hide();
-                    name.removeClass('d-none');
-                    nomnam.val(valor.nombres);
-                    lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
-                    step.removeClass('d-none');
-                }
-                console.log(valor);
-            }
-        })
-    });
-}
+
 function createOptions(myData) {
     // Crear un DocumentFragment para evitar múltiples redibujados del DOM
     let fragment = document.createDocumentFragment(); 
