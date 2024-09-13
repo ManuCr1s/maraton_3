@@ -3,6 +3,7 @@ import APP_INPUT from './form';
 import route from './route';
 import { data } from 'jquery';
 import Swal from 'sweetalert2';
+import html2pdf from 'html2pdf.js';
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
@@ -158,14 +159,19 @@ $(".submit").click(function(e){
 			data:dates,
 			success:function(valor){
 			 	let myData = $.parseJSON(valor)
-				let error = Object.values(myData)[0][0];
-				console.log(error);
-				if(!(error.status)){
+				let data = Object.values(myData)[0][0];
+				if(!(data.status)){
 					Swal.fire({
 						icon: "error",
 						title: 'Upps tenemos un problema',
-						text: error.message,
+						text: data.message,
 					  })
+				}else{
+					Swal.fire({
+						icon: "success",
+						title: 'Muchas Felicidades',
+						text: data.message,
+					})
 				}
 			}
 		});
