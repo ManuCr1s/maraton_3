@@ -46,10 +46,10 @@
                                             <small class="text-muted d-flex justify-content-between"><span><b>» ELITE VARONES MUJERES</b></span><span><b>Mayores de 18</b></span></small>          
                                         </li>
                                         <li class="text-muted my-sm-1 my-md-2">
-                                            <small class="text-muted d-flex justify-content-between"><span><b>» SUPER MASTER</b></span><span><b>49 a más</b></span></small>        
+                                            <small class="text-muted d-flex justify-content-between"><span><b>» SUPER MASTER</b></span><span><b>50 a más</b></span></small>        
                                         </li>
                                         <li class="text-muted my-sm-1 my-md-2">
-                                            <small class="text-muted d-flex justify-content-between"><span><b>» MASTER</b></span><span><b>40 a más</b></span></small>        
+                                            <small class="text-muted d-flex justify-content-between"><span><b>» MASTER</b></span><span><b>40 a 49</b></span></small>        
                                         </li>
                                         <li class="text-muted my-sm-1 my-md-2">
                                             <small class="text-muted d-flex justify-content-between"><span><b>» JUVENILES</b></span><span><b>15 - 16 - 17 años</b></span></small>          
