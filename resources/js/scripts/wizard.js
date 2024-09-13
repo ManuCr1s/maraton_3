@@ -114,8 +114,13 @@ $('#seachdni').click(function(e){
 					APP_INPUT.name.val(valor.nombres);
 					APP_INPUT.lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
 					$('#step-2').removeClass('d-none');
+				}else{
+					Swal.fire({
+						icon: "error",
+						title: 'Upps tenemos un problema',
+						text: valor.message,
+					})
 				}
-				console.log(valor);
 			}
 		})
 	}
@@ -131,12 +136,37 @@ $(".submit").click(function(e){
 			text: validate.message,
 		  })
 	}else{
+		let dates = {
+			level:APP_INPUT.level.val(),
+			gender:APP_INPUT.gender.val(),
+			country:APP_INPUT.country.val(),
+			type:APP_INPUT.type.val(),
+			number:APP_INPUT.number.val(),
+			name:APP_INPUT.name.val(),
+			lastname:APP_INPUT.lastname.val(),
+			born:APP_INPUT.date.val(),
+			region:APP_INPUT.region.val(),
+			province:APP_INPUT.province.val(),
+			district:APP_INPUT.district.val(),
+			phone:APP_INPUT.phone.val(),
+			addresd:APP_INPUT.addresd.val()
+		};
 		$.ajax({
-			url:url,
+			headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
+			url:route.register,
 			type:'POST',
 			data:dates,
 			success:function(valor){
-				console.log(valor);
+			 	let myData = $.parseJSON(valor)
+				let error = Object.values(myData)[0][0];
+				console.log(error);
+				if(!(error.status)){
+					Swal.fire({
+						icon: "error",
+						title: 'Upps tenemos un problema',
+						text: error.message,
+					  })
+				}
 			}
 		});
 	}

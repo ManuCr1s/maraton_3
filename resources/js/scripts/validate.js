@@ -17,7 +17,7 @@ export function sendForm(objeto){
         if(valueInput(objeto.district)&& objeto.district.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Distrito'}}
     }
     if(inputNull(objeto.phone)&& objeto.phone.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Numero de Celular'}}
-    if(inputNull(objeto.addresd)&& objeto.addresd.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Direccion'}}
+   if(inputNull(objeto.addresd)&& objeto.addresd.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Direccion'}}
     return {status:false}
 }
 export function searchDni(country,type,number){

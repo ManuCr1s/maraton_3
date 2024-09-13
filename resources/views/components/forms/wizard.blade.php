@@ -20,16 +20,16 @@
                             <h6 class="form-step__label">CATEGORIA</h6>
                             <select  class="form-control form-step__control" id="level">
                                 <option value="0" selected>SELECCIONE</option>
-                                <option value="EV">ELITE VARONES</option>
-                                <option value="EM">ELITE MUJERES</option>
-                                <option value="SM">SUPER MASTER</option>
-                                <option value="MM">MASTER</option>
-                                <option value="JU">JUVENILES</option>
-                                <option value="MEN">MENORES</option>
-                                <option value="JUN">JUNIOR</option>
-                                <option value="IN">INFANTIL</option>
-                                <option value="HESM">HABILIDADES ESPECIALES SORDO Y MUDO</option>
-                                <option value="HECC">HABILIDADES ESPECIALES CON CEGUERA</option>
+                                <option value="1">ELITE VARONES</option>
+                                <option value="2">ELITE MUJERES</option>
+                                <option value="11">SUPER MASTER</option>
+                                <option value="3">MASTER</option>
+                                <option value="4">JUVENILES</option>
+                                <option value="5">MENORES</option>
+                                <option value="6">JUNIOR</option>
+                                <option value="7">INFANTIL</option>
+                                <option value="8">HABILIDADES ESPECIALES SORDO Y MUDO</option>
+                                <option value="9">HABILIDADES ESPECIALES CON CEGUERA</option>
                             </select>
                             <br>
                             <h6 class="form-step__label">SEXO</h6>
