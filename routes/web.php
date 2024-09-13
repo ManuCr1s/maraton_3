@@ -20,6 +20,7 @@ use App\Http\Controllers\DistrictController;
 Route::controller(RegisterController::class)->group(function(){
     Route::get('/','index')->name('home');
     Route::get('/form','form')->name('form');
+    Route::post('/register','store')->name('register');
 });
 Route::controller(CountryController::class)->group(function(){
     Route::post('/country','index')->name('country');
