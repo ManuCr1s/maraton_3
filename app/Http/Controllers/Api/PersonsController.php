@@ -20,7 +20,7 @@ class PersonsController extends Controller
             'number'=>'required|string|max:8',
         ]);
         if(!($this->show($request->input('number')))){
-            $person = Person::select('number_doc', 'name','lastname')
+            $person = Person::select('name as nombres','dadname as apellidoPaterno','monname as apellidoMaterno')
             ->where('number_doc',$request->input('number'))
             ->first();
             if(!$person){
@@ -56,6 +56,7 @@ class PersonsController extends Controller
                     $person->message = 'Por favor registre sus nombres y apellidos';
                 }
             }
+            $person->status = true;
             return response()->json($person);
         }else{
             return [
