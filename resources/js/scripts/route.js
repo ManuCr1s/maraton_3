@@ -4,5 +4,6 @@ const route = {
     region:`${APP_ROUTE}/region`,
     province:`${APP_ROUTE}/province`,
     district:`${APP_ROUTE}/district`,
+    api:`${APP_ROUTE}/v1/api`
 }
 export default route 

@@ -21,12 +21,18 @@ export function chainSelected(a,b) {
             }
      });
 }
-export function chainCountryLocation(a,b){
+export function chainCountryLocation(a,b,c,d,e){
     a.on('change',function(){
         if(a.val()!=='1'){
             b.addClass('d-none');
+            c.addClass('d-none');
+            d.removeClass('d-none');
+            e.removeClass('d-none');
         }else{
-            b.removeClass('d-none')
+            b.removeClass('d-none');
+            c.removeClass('d-none');
+            d.addClass('d-none');
+            e.addClass('d-none');
         }
     });
 }
@@ -44,6 +50,47 @@ export function chainLocation(param1,param2,url){
                 param2.html(options);
             }
         });
+    });
+}
+export function searchDni(a,url,country,type,number,name,nomnam,lastname,step){
+    a.on('click',function(e){
+        e.preventDefault();
+     /*    console.log(url,country,country.val(),type,type.val(),number); */
+        if(country.val() !== '1'){
+            return {
+                'status':false,
+                'message':'Seleccione Pais Peru para buscar su registro'
+            }
+        }
+        if(type.val() !== 'D'){
+            return {
+                'status':false,
+                'message':'Seleccione DNI en tipo Documento'
+            } 
+        }
+        if(number.val().length !== 8){
+            return {
+                'status':false,
+                'message':'Ingrese un numero de documento valido'
+            } 
+        }
+        $.ajax({
+            url:url,
+            type:'POST',
+            data:{
+                number:number.val()
+            },
+            success:function(valor){
+                if(valor.status){
+                    a.hide();
+                    name.removeClass('d-none');
+                    nomnam.val(valor.nombres);
+                    lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
+                    step.removeClass('d-none');
+                }
+                console.log(valor);
+            }
+        })
     });
 }
 function createOptions(myData) {
@@ -76,6 +123,6 @@ export function loadDate(selec,url){
     });
 }
 export function onlyNumbers(code){
-    let variable = code.charCode;
-    return variable >= 48 && variable <= 57;
+    let variable = code.key;
+    return variable >= '0' && variable <= '9';
 }

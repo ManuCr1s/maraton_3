@@ -1,5 +1,6 @@
 import {validateForm,sendForm} from './validate';
 import APP_INPUT from './form';
+import { data } from 'jquery';
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
@@ -89,6 +90,15 @@ $(".submit").click(function(e){
 	let validate = sendForm(APP_INPUT);
 	if(validate.status){
 		alert(validate.message);
+	}else{
+		$.ajax({
+			url:url,
+			type:'POST',
+			data:dates,
+			success:function(valor){
+				console.log(valor);
+			}
+		});
 	}
 	return false;
 })
