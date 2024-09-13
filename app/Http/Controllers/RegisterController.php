@@ -55,9 +55,14 @@ class RegisterController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create($nombreArchivo)
     {
-        
+        $rutaArchivo = public_path('assets/pdf/'.$nombreArchivo);
+        if (file_exists($rutaArchivo)) {
+            return response()->download($rutaArchivo, $nombreArchivo);
+        } else {
+            abort(404);
+        }
     }
 
     /**

@@ -3,7 +3,7 @@ import APP_INPUT from './form';
 import route from './route';
 import { data } from 'jquery';
 import Swal from 'sweetalert2';
-import html2pdf from 'html2pdf.js';
+import jsPDF from 'jspdf';
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
@@ -171,7 +171,32 @@ $(".submit").click(function(e){
 						icon: "success",
 						title: 'Muchas Felicidades',
 						text: data.message,
-					})
+						confirmButtonText: "DESCARGAR CODIGO",
+					}).then((result) => {
+						var doc = new jsPDF()
+						doc.text(data.ins, 10, 10)
+						doc.save('a4.pdf')
+						if (result.isConfirmed) {
+							Swal.fire({
+								icon: "success",
+								title: 'Muchas Felicidades',
+								text: data.message,
+								confirmButtonText: "DESCARGAR BASES",
+							}).then((result) => {
+								window.open(route.pdf, '_blank');
+								if (result.isConfirmed) {
+									Swal.fire({
+										icon: "success",
+										title: "Enhorabuena",
+										text: "No olvide llevar los formatos un dia antes de la maraton",
+										confirmButtonText: "VOLVER A LA INSCRIPCION",
+									}).then((result) => {
+											  location.reload();
+									}) 
+								} 
+							  });
+						}  
+					  });
 				}
 			}
 		});

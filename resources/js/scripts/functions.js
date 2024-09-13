@@ -10,10 +10,10 @@ export function inputNull(input) {
 }
 export function chainSelected(a,b) {
      a.on('change',function(){
-            if(a.val()==='EV'){
+            if(a.val()==='1'){
                 b.attr('disabled','');
                 b.val('M');
-            }else if(a.val() === 'EM'){
+            }else if(a.val() === '2'){
                 b.attr('disabled','');
                 b.val('F');
             }else{

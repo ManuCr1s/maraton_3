@@ -6,5 +6,6 @@ const route = {
     district:`${APP_ROUTE}/district`,
     api:`${APP_ROUTE}/v1/api`,
     register:`${APP_ROUTE}/register`,
+    pdf:`${APP_ROUTE}/documents/BASES_MARATON.pdf`,
 }
 export default route 
