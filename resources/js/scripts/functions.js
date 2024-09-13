@@ -21,18 +21,22 @@ export function chainSelected(a,b) {
             }
      });
 }
-export function chainCountryLocation(a,b,c,d,e){
+export function chainCountryLocation(a,b,c,d,e,f){
     a.on('change',function(){
         if(a.val()!=='1'){
             b.addClass('d-none');
             c.addClass('d-none');
             d.removeClass('d-none');
             e.removeClass('d-none');
+            f.attr('disabled','');
+            f.val('C')
         }else{
             b.removeClass('d-none');
             c.removeClass('d-none');
             d.addClass('d-none');
             e.addClass('d-none');
+            f.removeAttr('disabled');
+            f.val('0');
         }
     });
 }
