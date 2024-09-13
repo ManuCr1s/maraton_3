@@ -94,18 +94,11 @@
                                 </select>
                                 <br>
                                 <h6 class="form-step__label">NUMERO DE DOCUMENTO</h6>
-                                <div class="row">
-                                      <div class="col-md-7">
-                                        <input type="text" class="form-control form-step__control" placeholder="INGRESE NUMERO" id="number">
-                                    </div>
-                                    <div class="col-md-5">
-                                       
-                                        <button class="action-button">BUSCAR DNI</button>
-                                    </div>
-                                </div>
+                                <input type="text" class="form-control form-step__control" placeholder="INGRESE NUMERO" id="number" minlength="8" maxlength="20">
+                                <button type="submit" class="form-control action-button" id="seachdni">BUSCAR DNI</button>
                                 
                         </div>
-                        <div class="col-md-6 d-none">    
+                        <div class="col-md-6 d-none" id="names">    
                                 <div class="row d-flex justify-content-center">
                                     <i class="fa-solid fa-user-check form-step__icon"></i>
                                 </div> 
@@ -120,7 +113,7 @@
                         </div>
                     </div>
                 <input type="button" name="previous" class="previous action-button-previous" value="ANTERIOR"/>
-                <input type="button" name="next" class="next action-button" value="SIGUIENTE"/>
+                <input type="button" name="next" class="next action-button d-none" id="step-2" value="SIGUIENTE"/>
             </fieldset>
             <fieldset fieldset class="form-step">
                 <h2 class="form-step__title">LUGAR DE PROCEDENCIA</h2>
