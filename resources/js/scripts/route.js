@@ -9,5 +9,6 @@ const route = {
     pdf:`${APP_ROUTE}/documents/BASES_MARATON.pdf`,
     may:`${APP_ROUTE}/documents/MAYORES.pdf`,
     men:`${APP_ROUTE}/documents/MENORES.pdf`,
+    form:`${APP_ROUTE}/form`
 }
 export default route 

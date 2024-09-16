@@ -9,6 +9,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
+    <div id="preloader" class="preloader">
+        <div class="d-block">
+            <img src="{{asset('assets/img/preloader.gif')}}" alt="">
+            <p class="text-preloader">C A R G A N D O . . .</p>
+        </div>
+    </div>
     @yield('container')
     @vite(['resources/js/app.js'])
     @yield('footer')

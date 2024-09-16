@@ -42,6 +42,7 @@ export function chainCountryLocation(a,b,c,d,e,f){
 }
 export function chainLocation(param1,param2,url){
     param1.on('change',function(){
+        $("#preloader").show();
         let datos = {'valor':param1.val()};
         $.ajax({
             headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
@@ -52,6 +53,7 @@ export function chainLocation(param1,param2,url){
                 let myData = JSON.parse(date);
                 let options = createOptions(myData);
                 param2.html(options);
+                $("#preloader").hide();
             }
         });
     });
@@ -75,6 +77,7 @@ function createOptions(myData) {
     return fragment;
 }
 export function loadDate(selec,url){
+    $("#preloader").show();
     $.ajax({
         headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
         type:'POST',
@@ -83,6 +86,7 @@ export function loadDate(selec,url){
             let myData = JSON.parse(date);
             let options = createOptions(myData);
             selec.html(options);
+            $("#preloader").hide();
         }
     });
 }

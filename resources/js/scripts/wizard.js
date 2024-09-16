@@ -102,6 +102,7 @@ $('#seachdni').click(function(e){
 			text: validation.message,
 		  })
 	}else{
+		$("#preloader").show();
 		$.ajax({
 			url:route.api,
 			type:'POST',
@@ -109,6 +110,7 @@ $('#seachdni').click(function(e){
 				number:APP_INPUT.number.val()
 			},
 			success:function(valor){
+				$("#preloader").hide();
 				if(valor.status){
 					$('#seachdni').hide();
 					$('#names').removeClass('d-none');
@@ -152,12 +154,14 @@ $(".submit").click(function(e){
 			phone:APP_INPUT.phone.val(),
 			addresd:APP_INPUT.addresd.val()
 		};
+		$("#preloader").show();
 		$.ajax({
 			headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
 			url:route.register,
 			type:'POST',
 			data:dates,
 			success:function(valor){
+				$("#preloader").hide();
 			 	let myData = $.parseJSON(valor)
 				let data = Object.values(myData)[0][0];
 				if(!(data.status)){
