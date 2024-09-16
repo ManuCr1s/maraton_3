@@ -1,17 +1,23 @@
 import jsPDF from 'jspdf';
-/* import html2canvas from 'html2canvas';
+import html2canvas from 'html2canvas';
+
+/*
 $(document).ready(function(){
     $('#icon-test').on('click',function(){
-        const imgData = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ...';
         var doc = new jsPDF();
-        html2canvas(content).then(function(canvas) {
-            const imgData = canvas.toDataURL('image/png');
-            const imgWidth = 210; // Ancho en mm para el PDF (A4)
-            const imgHeight = (canvas.height * imgWidth) / canvas.width;
-            // Agregar la imagen al PDF
-        pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-            // Guardar el PDF
-        pdf.save('documento_desde_html.pdf');
-    })
-});
- */
+        doc.setFontSize(15);
+        doc.setTextColor(127, 140, 141);
+        doc.text('MARATON INTERNACIONAL MESETA DEL BOMBON', 45, 20);
+        doc.setDrawColor(204, 209, 209 );
+        doc.line(70, 25, 150, 25);
+        doc.setFontSize(65);
+        doc.setTextColor(2, 50, 133);
+        doc.text('EV-12', 80,55);
+        doc.setFontSize(10);
+        doc.setTextColor(2, 50, 133);
+        doc.text('NUMERO DE INSCRITO', 90,65);
+        doc.setDrawColor(255,0,0);
+        doc.rect(45, 75, 130, 30, 'F');   
+        doc.save('Inscripcion.pdf');
+    });
+});*/
