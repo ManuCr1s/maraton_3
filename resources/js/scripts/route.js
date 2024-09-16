@@ -7,5 +7,7 @@ const route = {
     api:`${APP_ROUTE}/v1/api`,
     register:`${APP_ROUTE}/register`,
     pdf:`${APP_ROUTE}/documents/BASES_MARATON.pdf`,
+    may:`${APP_ROUTE}/documents/MAYORES.pdf`,
+    men:`${APP_ROUTE}/documents/MENORES.pdf`,
 }
 export default route 

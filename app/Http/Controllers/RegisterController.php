@@ -98,7 +98,7 @@ class RegisterController extends Controller
             echo $th->getMessage();
             return json_encode(['error' => [['status'=>false,'message' => "No se puede ingresar al usuario en la tabla"]]]); 
         }
-        return json_encode(['registered' => [['status'=>true,'message' =>"Usted se ha inscrito satisfactoriamente",'ins'=>$codigo]]]);     
+        return json_encode(['registered' => [['status'=>true,'message' =>"Usted se ha inscrito satisfactoriamente",'ins'=>$codigo,'cod'=>$request->input('level')]]]);     
     }
 
     /**

@@ -194,14 +194,30 @@ $(".submit").click(function(e){
 								icon: "success",
 								title: 'Muchas Felicidades',
 								text: data.message,
-								confirmButtonText: "DESCARGAR BASES",
+								confirmButtonText: "DESCARGAR FORMATOS",
 							}).then((result) => {
-								window.open(route.pdf, '_blank');
+								switch (data.cod) {
+									case '1':
+										window.open(route.may, '_blank');
+										break;
+									case '2':
+										window.open(route.may, '_blank');
+									break;
+									case '3':
+										window.open(route.may, '_blank');
+									break;
+									case '11':
+										window.open(route.may, '_blank');
+									break;
+									default:
+										window.open(route.men, '_blank');
+										break;
+								}
 								if (result.isConfirmed) {
 									Swal.fire({
 										icon: "success",
 										title: "Enhorabuena",
-										text: "No olvide llevar los formatos un dia antes de la maraton",
+										text: "No olvide rrellenar y llevar los formatos un dia antes de la maraton",
 										confirmButtonText: "VOLVER A LA INSCRIPCION",
 									}).then((result) => {
 											  location.reload();
