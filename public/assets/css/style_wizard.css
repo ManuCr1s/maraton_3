@@ -2,8 +2,8 @@
  /*basic reset*/
 #container{
     padding: 5% 0;
-    background: rgba(230, 83, 54);
-    background: -webkit-linear-gradient(rgba(230, 83, 54), rgba(250, 163, 61));
+    background: #022385;
+    background: -webkit-linear-gradient(#022385,#0088CA);
 }   
 #container__form{
     font-family: montserrat, arial, verdana;
@@ -14,7 +14,7 @@
     /*LOGO Y NAVBAR*/
     .logo__icon{
         font-size: 2.5em;
-        background: linear-gradient(#ea9584,#fcc88c);
+        background:#fff;
         margin: 0 5% 0 0;
         -webkit-background-clip: text;
         color: transparent;
@@ -30,7 +30,7 @@
         line-height: 15px;
     }
     .title__main{
-        color: #ffb291; 
+        color: #ffffff; 
         line-height: 12px;
         font-weight: bolder;
         letter-spacing: 5px;
@@ -39,7 +39,7 @@
     .title__main--main{
         line-height: 12px;
         letter-spacing: 14px;
-        color: #ffb291;
+        color: #ffffff;
         font-weight: bolder;
         font-size: 12px;
     }
@@ -51,6 +51,9 @@
     .navbar-toggler-icon{
         width: 1em;
         height: 1em;
+    }
+    .navbar-toggler{
+        background-color: white;
     }
     /*BARRA DE PROGRESO*/
     #progressbar {
@@ -137,7 +140,7 @@
         margin-bottom: 20px;
     }
     .form-step__icon{
-        color: rgba(230, 83, 54);
+        color: #0088CA;
         font-size: 50px;
         padding: 3%;
         margin: 3%;
@@ -150,7 +153,7 @@
     }
     .form-step__control{
         border: 0;
-        border-bottom: 1px solid rgba(230, 83, 54);
+        border-bottom: 1px solid #0088CA;
         margin: 0 0 2% 0;
         border-radius: 0;
     }
@@ -163,7 +166,7 @@
     }
     .form-step__block{
         letter-spacing: 5px;
-        color: rgba(230, 83, 54);
+        color: #0088CA;
         font-size: 10px;
         margin-top: 10px;
     }
@@ -175,7 +178,7 @@
     display: none;
 }
 .action-button {
-    background: rgba(230, 83, 54);
+    background: #0088CA;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -184,7 +187,7 @@
     margin: 10px 5px;
 }
 .action-button-previous {
-    background: #f2c1ac;
+    background: #acc3f2;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -199,7 +202,7 @@
     /*form styles*/
     .logo__icon{
         font-size: 4em;
-        background: linear-gradient(#ea9584,#fcc88c);
+        background: white;
         margin: 0 5% 0 0;
         -webkit-background-clip: text;
         color: transparent;
@@ -215,7 +218,7 @@
         line-height: 20px;
     }
     .title__main{
-        color: #ffb291; 
+        color: #ffffff; 
         line-height: 20px;
         font-weight: bolder;
         letter-spacing: 5px;
@@ -223,7 +226,7 @@
     .title__main--main{
         line-height: 20px;
         letter-spacing: 14px;
-        color: #ffb291;
+        color: #ffffff;
         font-weight: bolder;
     }
     .title-menu{
@@ -260,7 +263,7 @@
         margin-bottom: 20px;
     }
     .form-step__icon{
-        color: rgba(230, 83, 54);
+        color: #0088CA;
         font-size: 50px;
         padding: 3%;
         margin: 3%;
@@ -273,7 +276,7 @@
     }
     .form-step__control{
         border: 0;
-        border-bottom: 1px solid rgba(230, 83, 54);
+        border-bottom: 1px solid #0088CA;
         margin: 0 0 2% 0;
         border-radius: 0;
     }
@@ -286,14 +289,14 @@
     }
     .form-step__block{
         letter-spacing: 5px;
-        color: rgba(230, 83, 54);
+        color: #0088CA;
     }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
 }
 .action-button {
-    background: rgba(230, 83, 54);
+    background: #0088CA;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -302,7 +305,7 @@
     margin: 10px 5px;
 }
 .action-button-previous {
-    background: #f2c1ac;
+    background: #acc3f2;
     font-weight: bold;
     color: white;
     border: 0 none;

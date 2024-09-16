@@ -174,8 +174,9 @@ $(".submit").click(function(e){
 						confirmButtonText: "DESCARGAR CODIGO",
 					}).then((result) => {
 						var doc = new jsPDF()
-						doc.text(data.ins, 10, 10)
-						doc.save('a4.pdf')
+						doc.setFontSize(22);
+						doc.text(data.ins, 10, 10);
+						doc.save('Inscripcion.pdf');
 						if (result.isConfirmed) {
 							Swal.fire({
 								icon: "success",

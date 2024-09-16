@@ -9,7 +9,7 @@
         letter-spacing: 2px;
     }
     .button--orange{
-        color: #f3893a;
+        color: #022385;
     }
     .icon{
         font-size:20px;
@@ -24,7 +24,7 @@
     .icon-button{
         font-size: 20px;
         text-align: center;
-        color: #f3893a;
+        color: #022385;
     }
     .item__list{
         margin-right: 20%;
@@ -36,7 +36,7 @@
     /*------------------------ start menu item  ----------------------*/
     .logo__icon{
         font-size: 2.8em;
-        background: linear-gradient(#e65336,#faa33d);
+        background: -webkit-linear-gradient(#022385,#0088CA);
         margin: 0 5% 0 0;
         -webkit-background-clip: text;
         color: transparent;
@@ -46,13 +46,13 @@
     }
     .title__secondary{
         font-size: 9px;
-        color: #faa33d;
+        color: #0088CA;
         font-weight: 500;
         letter-spacing: 1px;
         line-height: 15px;
     }
     .title__main{
-        color: #ec6f38; 
+        color: #022385; 
         line-height: 15px;
         font-weight: bolder;
         letter-spacing: 5px;
@@ -61,14 +61,14 @@
     .title__main--main{
         line-height: 15px;
         letter-spacing: 14px;
-        color: #ec6f38;
+        color: #022385;
         font-weight: bolder;
         font-size: 15px;
     }
     /*------------------------- end menu icon -------------------------*/
     /*START BODY: HOME*/
     .icon-body{
-        color: #f3893a;
+        color: #0088CA;
     }
     .text-body{
         font-size: 14px;
@@ -88,7 +88,7 @@
     .simply-amount{
         text-align: center;
         display: block;
-        color: #ec6f38;
+        color: #0088CA;
         font-size: 20px;
         line-height: 10px;
     }
@@ -123,7 +123,7 @@
     .text-footer_secondary{
         font-size: 10px;
         font-weight: 500;
-        color: #faa33d;
+        color: #0088CA;
         letter-spacing: 5px;
     }
     .text-footer_main{
@@ -132,7 +132,7 @@
     }
     .secondary-footer{
         background-color: #252828;
-        color: #faa33d;
+        color: #0088CA;
         font-weight: 500;
         letter-spacing: 5px;
         justify-content: center;
@@ -151,7 +151,7 @@
         letter-spacing: 2px;
     }
     .button--orange{
-        color: #f3893a;
+        color: #0088CA;
     }
     .icon{
         font-size:20px;
@@ -165,7 +165,7 @@
     }
     .icon-button{
         font-size: 25px;
-        color: #f3893a;
+        color: #0088CA;
     }
     .item__list{
         margin-right: 20%;
@@ -177,7 +177,7 @@
     /*------------------------ start menu item  ----------------------*/
     .logo__icon{
         font-size: 4em;
-        background: linear-gradient(#e65336,#faa33d);
+        background: -webkit-linear-gradient(#03174a,#0088CA);
         margin: 0 5% 0 0;
         -webkit-background-clip: text;
         color: transparent;
@@ -187,13 +187,13 @@
     }
     .title__secondary{
         font-size: 11px;
-        color: #faa33d;
+        color: #0088CA;
         font-weight: 500;
         letter-spacing: 1px;
         line-height: 20px;
     }
     .title__main{
-        color: #ec6f38; 
+        color: #03174a; 
         line-height: 20px;
         font-weight: bolder;
         letter-spacing: 5px;
@@ -201,12 +201,12 @@
     .title__main--main{
         line-height: 20px;
         letter-spacing: 14px;
-        color: #ec6f38;
+        color: #03174a;
         font-weight: bolder;
     }
     /*------------------------- end menu icon -------------------------*/
     .icon-body{
-        color: #f3893a;
+        color: #0088CA;
     }
     .text-body{
         font-size: 16px;
@@ -226,7 +226,7 @@
     .simply-amount{
         text-align: center;
         display: block;
-        color: #ec6f38;
+        color: #0088CA;
         font-size: 30px;
         line-height: 35px;
     }
@@ -261,7 +261,7 @@
     .text-footer_secondary{
         font-size: 16px;
         font-weight: 500;
-        color: #faa33d;
+        color: #0088CA;
         letter-spacing: 5px;
     }
     .text-footer_main{
@@ -270,7 +270,7 @@
     }
     .secondary-footer{
         background-color: #252828;
-        color: #faa33d;
+        color: #0088CA;
         font-weight: 500;
         letter-spacing: 5px;
         justify-content: center;
@@ -290,7 +290,7 @@
 }
 .nav-link__secondary{
     font-size: 10px;
-    color: #faa33d;
+    color: #0088CA;
 }
 /*------------------------- end menu icon -------------------------*/
 /*END PAGE: HOME HEADER */
@@ -316,7 +316,7 @@
 }
 .icon-subtitle{
     font-size: 15px;
-    color: #faa33d;
+    color: #0088CA;
     margin: 0 2% 0 0;
 }
 

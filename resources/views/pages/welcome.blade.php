@@ -10,7 +10,7 @@
                     <li class="item__list"><i class="fa-brands fa-square-facebook icon-button"></i></li>
                     <li class="item__list"><i class="fa-brands fa-tiktok icon-button"></i></li>
                     <li class="item__list"><i class="fa-brands fa-youtube icon-button"></i></li>
-                    <li class="item__list"><i class="fa-brands fa-square-x-twitter icon-button"></i></li>
+                    <li class="item__list" id="icon-test"><i class="fa-brands fa-square-x-twitter icon-button"></i></li>
                 </ul>
                 <a href="" class="button button--orange">
                     <i class="fa-solid fa-print icon"></i>VERIFICA TU INSCRIPCION   
