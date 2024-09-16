@@ -22,17 +22,17 @@ Route::controller(RegisterController::class)->group(function(){
     Route::get('/form','form')->name('form');
     Route::post('/register','store')->name('register');
     Route::get('/documents/{nombreArchivo}','create')->name('download');
-});
+})->middleware('guest');
 Route::controller(CountryController::class)->group(function(){
     Route::post('/country','index')->name('country');
-});
+})->middleware('guest');
 Route::controller(RegionControler::class)->group(function(){
     Route::post('/region','index')->name('region');
-});
+})->middleware('guest');
 Route::controller(ProvinceController::class)->group(function(){
     Route::post('/province','store')->name('province');
-});
+})->middleware('guest');
 Route::controller(DistrictController::class)->group(function(){
     Route::post('/district','store')->name('district');
-});
+})->middleware('guest');
 
