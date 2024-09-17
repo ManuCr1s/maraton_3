@@ -16,6 +16,7 @@ $(".next").click(function(){
 			icon: "error",
 			title: 'Upps tenemos un problema',
 			text: validate.message,
+			allowOutsideClick: false,
 		  })
 	}else{
 		if(animating) return false;
@@ -100,6 +101,7 @@ $('#seachdni').click(function(e){
 			icon: "error",
 			title: 'Upps tenemos un problema',
 			text: validation.message,
+			allowOutsideClick: false,
 		  })
 	}else{
 		$("#preloader").show();
@@ -137,6 +139,7 @@ $(".submit").click(function(e){
 			icon: "error",
 			title: 'Upps tenemos un problema',
 			text: validate.message,
+			allowOutsideClick: false,
 		  })
 	}else{
 		let dates = {
@@ -169,12 +172,14 @@ $(".submit").click(function(e){
 						icon: "error",
 						title: 'Upps tenemos un problema',
 						text: data.message,
+						allowOutsideClick: false,
 					  })
 				}else{
 					Swal.fire({
 						icon: "success",
 						title: 'Muchas Felicidades',
 						text: data.message,
+						allowOutsideClick: false,
 						confirmButtonText: "DESCARGAR CODIGO",
 					}).then((result) => {
 						var doc = new jsPDF()
@@ -198,6 +203,7 @@ $(".submit").click(function(e){
 								icon: "success",
 								title: 'Muchas Felicidades',
 								text: data.message,
+								allowOutsideClick: false,
 								confirmButtonText: "DESCARGAR FORMATOS",
 							}).then((result) => {
 								switch (data.cod) {
@@ -223,6 +229,7 @@ $(".submit").click(function(e){
 										title: "Enhorabuena",
 										text: "No olvide rrellenar y llevar los formatos un dia antes de la maraton",
 										confirmButtonText: "VOLVER A LA INSCRIPCION",
+										allowOutsideClick: false,
 									}).then((result) => {
 											  location.reload();
 									}) 
