@@ -52,6 +52,11 @@
             <div class="container">
                 <h5 class="text-footer_secondary">NUESTROS SON</h5>
                 <h5 class="text-footer_main">AUSPICIADORES</h5>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{{asset('assets/img/maratonpasco-logo.png')}}" alt="auspiciadroes" class='image-logo'>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row p-3 secondary-footer">
