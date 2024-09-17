@@ -19,8 +19,8 @@ return new class extends Migration
             $table->text('abilities')->nullable();
             $table->dateTime('last_used_at',$precision=3)->nullable();
             $table->dateTime('expires_at',$precision=3)->nullable();
-            $table->dateTime('create_at',$precision=3);
-            $table->dateTime('update_at',$precision=3);
+            $table->dateTime('created_at',$precision=3);
+            $table->dateTime('updated_at',$precision=3);
         });
     }
 

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->string('number_doc',50)->primary();
             $table->string('name',255);
             $table->string('lastname',255);
-            $table->dateTime('create_at',$precision = 3);
-            $table->dateTime('update_at',$precision = 3);
+            $table->dateTime('created_at',$precision = 3);
+            $table->dateTime('updated_at',$precision = 3);
         });
     }
 

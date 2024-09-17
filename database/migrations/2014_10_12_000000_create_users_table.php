@@ -18,8 +18,8 @@ return new class extends Migration
             $table->dateTime('email_verified_at',$precision=3)->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->dateTime('create_at',$precision=3);
-            $table->dateTime('update_at',$precision=3);
+            $table->dateTime('created_at',$precision=3);
+            $table->dateTime('updated_at',$precision=3);
         });
     }
 

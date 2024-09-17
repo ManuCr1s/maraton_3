@@ -30,8 +30,8 @@ return new class extends Migration
             $table->unsignedBigInteger('id_level');
             $table->string('status',5)->default(true);
             $table->string('user',10)->nullable();
-            $table->dateTime('create_at',$precision = 3);
-            $table->dateTime('update_at',$precision = 3);
+            $table->dateTime('created_at',$precision = 3);
+            $table->dateTime('updated_at',$precision = 3);
             $table->foreign('id_country')->references('id_country')->on('countries');
             $table->foreign('id_region')->references('id_region')->on('regions');
             $table->foreign('id_province')->references('id_province')->on('provinces');

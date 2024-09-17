@@ -4,7 +4,7 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active nuevo">
-                      <img src="{{asset('assets/img/maratonpasco_banner1-4.jpeg')}}" class="d-block w-100 img_slider" alt="¿Estas listo para la prueba?">
+                      <img src="{{asset('assets/img/maratonpasco_banner1-5.jpeg')}}" class="d-block w-100 img_slider" alt="¿Estas listo para la prueba?">
                 </div>
 
             </div>

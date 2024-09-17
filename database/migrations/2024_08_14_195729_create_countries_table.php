@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->id('id_country');
             $table->string('name_country',50);
-            $table->dateTime('create_at',$precision = 3);
-            $table->dateTime('update_at',$precision = 3);
+            $table->dateTime('created_at',$precision = 3);
+            $table->dateTime('updated_at',$precision = 3);
         });
     }
 

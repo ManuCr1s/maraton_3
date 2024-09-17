@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('regions', function (Blueprint $table) {
             $table->id('id_region');
             $table->string('name_region',50);
-            $table->dateTime('create_at',$precision = 3);
-            $table->dateTime('update_at',$precision = 3);
+            $table->dateTime('created_at',$precision = 3);
+            $table->dateTime('updated_at',$precision = 3);
         });
     }
 
