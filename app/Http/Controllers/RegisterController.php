@@ -104,6 +104,18 @@ class RegisterController extends Controller
     /**
      * Display the specified resource.
      */
+    public function verificationDni(Request $request){
+        $number = new Register;
+        $number = Register::select('status','number_ins','id_level')->where('number_doc',$request->dni)->first();
+        if(!$number){
+            return response()->json([
+                'status' => false,
+                'message' => 'Usted no se encuentra registrado'
+            ]);
+        }
+        $number->status = true;
+        return response()->json($number);
+    }
     public function show($id)
     {
         $register = new Register;

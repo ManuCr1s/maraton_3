@@ -22,6 +22,7 @@ Route::controller(RegisterController::class)->group(function(){
     Route::get('/form','form')->name('form');
     Route::post('/register','store')->name('register');
     Route::get('/documents/{nombreArchivo}','create')->name('download');
+    Route::post('/verification','verificationDni')->name('verification');
 })->middleware('guest');
 Route::controller(CountryController::class)->group(function(){
     Route::post('/country','index')->name('country');
