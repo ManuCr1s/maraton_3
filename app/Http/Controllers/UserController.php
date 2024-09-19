@@ -13,6 +13,10 @@ class UserController extends Controller
     {
         return view('pages.module.dashboard');
     }
+    public function login()
+    {
+        return view('pages.module.login');
+    }
 
     /**
      * Show the form for creating a new resource.

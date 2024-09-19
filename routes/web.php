@@ -37,8 +37,9 @@ Route::controller(ProvinceController::class)->group(function(){
 Route::controller(DistrictController::class)->group(function(){
     Route::post('/district','store')->name('district');
 })->middleware('guest');
-
+Route::get('/login',[UserController::class,'login'])->name('login');
 Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
 Route::middleware('auth')->group(function(){
     
+
 });
