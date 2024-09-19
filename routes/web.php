@@ -6,6 +6,7 @@ use App\Http\Controllers\CountryController;
 use App\Http\Controllers\RegionControler;
 use App\Http\Controllers\ProvinceController;
 use App\Http\Controllers\DistrictController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,7 @@ Route::controller(DistrictController::class)->group(function(){
     Route::post('/district','store')->name('district');
 })->middleware('guest');
 
+Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
+Route::middleware('auth')->group(function(){
+    
+});
