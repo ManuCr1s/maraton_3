@@ -55,8 +55,9 @@ class PersonsController extends Controller
                     $person->status = false;
                     $person->message = 'Por favor registre sus nombres y apellidos';
                 }
+            }else{
+                $person->status = true;
             }
-            $person->status = true;
             return response()->json($person);
         }else{
             return [
