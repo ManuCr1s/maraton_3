@@ -122,10 +122,10 @@ $('#seachdni').click(function(e){
 							title: 'Upps tenemos un problema',
 							text: valor.message,
 						})
-						$('#step-2').removeClass('d-none');
 					}
 					APP_INPUT.name.val(valor.nombres);
 					APP_INPUT.lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
+					$('#step-2').removeClass('d-none');
 				}else{
 					Swal.fire({
 						icon: "error",
