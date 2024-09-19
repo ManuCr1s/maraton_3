@@ -52,7 +52,9 @@ class PersonsController extends Controller
                     $person->status = false;
                     $person->message = 'Por favor ingrese un DNI valido';
                 }else if($person->message == 'not found'){
-                    $person->status = false;
+                    $person->status = true;
+                    $person->apellidoPaterno = '';
+                    $person->apellidoMaterno = '';
                     $person->message = 'Por favor registre sus nombres y apellidos';
                 }
             }else{

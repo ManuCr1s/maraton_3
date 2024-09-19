@@ -116,9 +116,16 @@ $('#seachdni').click(function(e){
 				if(valor.status){
 					$('#seachdni').hide();
 					$('#names').removeClass('d-none');
+					if(valor.apellidoPaterno == ''){
+						Swal.fire({
+							icon: "error",
+							title: 'Upps tenemos un problema',
+							text: valor.message,
+						})
+						$('#step-2').removeClass('d-none');
+					}
 					APP_INPUT.name.val(valor.nombres);
 					APP_INPUT.lastname.val(valor.apellidoPaterno+' '+valor.apellidoMaterno);
-					$('#step-2').removeClass('d-none');
 				}else{
 					Swal.fire({
 						icon: "error",
