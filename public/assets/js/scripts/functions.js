@@ -24,3 +24,17 @@ export  function sendData(date,url){
     });
 
 }
+export function countLevel(url){
+    $('#datatables').DataTable({
+        "ajax":url,
+        "columns":[
+            {
+                "orderable": false,
+                "data": null,
+                "defaultContent": '<i class="fa fa-line-chart"></i>'
+            }, 
+            {data:"name"},
+            {data:"count"}
+        ]
+    });
+}

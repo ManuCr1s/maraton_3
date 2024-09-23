@@ -18,149 +18,15 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
+                             
+                                            <table id="datatables" class="table">
+                                                <thead>
                                                     <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>ELITE VARONES</td>
-                                                        <td class="text-right">
-                                                            2.920
-                                                        </td>
-                                                        <td class="text-right">
-                                                            53.23%
-                                                        </td>
+                                                        <th>ICON</th>
+                                                        <th>NOMBRE DE LA CATEGORIA</th>
+                                                        <th>CANTIDAD DE INSCRITOS</th>
                                                     </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>ELITE MUJERES</td>
-                                                        <td class="text-right">
-                                                            1.300
-                                                        </td>
-                                                        <td class="text-right">
-                                                            20.43%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>SUPER MASTER</td>
-                                                        <td class="text-right">
-                                                            760
-                                                        </td>
-                                                        <td class="text-right">
-                                                            10.35%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>MASTER</td>
-                                                        <td class="text-right">
-                                                            690
-                                                        </td>
-                                                        <td class="text-right">
-                                                            7.87%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>JUVENILES</td>
-                                                        <td class="text-right">
-                                                            600
-                                                        </td>
-                                                        <td class="text-right">
-                                                            5.94%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>MENORES</td>
-                                                        <td class="text-right">
-                                                            550
-                                                        </td>
-                                                        <td class="text-right">
-                                                            4.34%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>JUNIOR</td>
-                                                        <td class="text-right">
-                                                            550
-                                                        </td>
-                                                        <td class="text-right">
-                                                            4.34%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>INFANTIL</td>
-                                                        <td class="text-right">
-                                                            550
-                                                        </td>
-                                                        <td class="text-right">
-                                                            4.34%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>HABILIDADES ESPECIALES SORDO Y MUDO</td>
-                                                        <td class="text-right">
-                                                            550
-                                                        </td>
-                                                        <td class="text-right">
-                                                            4.34%
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="flag">
-                                                                 <i class="fa fa-line-chart"></i>
-                                                            </div>
-                                                        </td>
-                                                        <td>HABILIADADES ESPECIALES VISUAL</td>
-                                                        <td class="text-right">
-                                                            550
-                                                        </td>
-                                                        <td class="text-right">
-                                                            4.34%
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
+                                                </thead>
                                             </table>
                                         </div>
                                     </div>
@@ -263,7 +129,7 @@
 </div>
 @endsection
 @section('footer')
-    <script src="{{asset('assets/js/plugin/sweetalert2.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/jquery.datatables.js')}}"></script>
     <script type="module" src="{{asset('assets/js/scripts/functions.js')}}" type="text/javascript"></script>
     <script type="module" src="{{asset('assets/js/scripts/dashboard.js')}}" type="text/javascript"></script>
 @endsection

@@ -42,4 +42,5 @@ Route::post('/logear',[UserController::class,'store'])->name('logear');
 Route::middleware('auth')->group(function(){
     Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
     Route::post('/logout',[UserController::class,'destroy'])->name('logout');
+    Route::get('/level',[RegisterController::class,'levelCount'])->name('level');
 });
