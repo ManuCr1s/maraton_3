@@ -1,4 +1,5 @@
-import {countLevel} from './functions.js';
+import {countLevel,sendData} from './functions.js';
 $(document).ready(function(){
+    sendData($('#logout'),'/logout');
     countLevel('/level');
 });
