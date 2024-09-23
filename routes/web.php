@@ -38,8 +38,8 @@ Route::controller(DistrictController::class)->group(function(){
     Route::post('/district','store')->name('district');
 })->middleware('guest');
 Route::get('/login',[UserController::class,'login'])->name('login');
-Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
+Route::post('/logear',[UserController::class,'store'])->name('logear');
 Route::middleware('auth')->group(function(){
-    
-
+    Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
+    Route::post('/logout',[UserController::class,'destroy'])->name('logout');
 });

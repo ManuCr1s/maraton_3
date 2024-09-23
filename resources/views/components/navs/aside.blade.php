@@ -25,7 +25,7 @@
 
 					<a data-toggle="collapse" href="#collapseExample" class="collapsed">
 						<span>
-							Tania Andrew
+							{{Auth::user()->name}}
 	                        <b class="caret"></b>
 						</span>
                     </a>
@@ -35,21 +35,21 @@
 							<li>
 								<a href="#pablo">
 									<span class="sidebar-mini">MP</span>
-									<span class="sidebar-normal">My Profile</span>
+									<span class="sidebar-normal">Mi Perfil</span>
 								</a>
 							</li>
 
 							<li>
 								<a href="#pablo">
 									<span class="sidebar-mini">EP</span>
-									<span class="sidebar-normal">Edit Profile</span>
+									<span class="sidebar-normal">Editar Perfil</span>
 								</a>
 							</li>
 
 							<li>
 								<a href="#pablo">
-									<span class="sidebar-mini">S</span>
-									<span class="sidebar-normal">Settings</span>
+									<span class="sidebar-mini">A</span>
+									<span class="sidebar-normal">Ajustes</span>
 								</a>
 							</li>
 						</ul>
@@ -59,7 +59,7 @@
 
 			<ul class="nav">
 				<li class="active">
-					<a href="dashboard.html">
+					<a href="{{route('dashboard')}}">
 						<i class="pe-7s-graph"></i>
 						<p>Dashboard</p>
 					</a>

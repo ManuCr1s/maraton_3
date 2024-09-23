@@ -263,5 +263,7 @@
 </div>
 @endsection
 @section('footer')
-
+    <script src="{{asset('assets/js/plugin/sweetalert2.js')}}"></script>
+    <script type="module" src="{{asset('assets/js/scripts/functions.js')}}" type="text/javascript"></script>
+    <script type="module" src="{{asset('assets/js/scripts/dashboard.js')}}" type="text/javascript"></script>
 @endsection

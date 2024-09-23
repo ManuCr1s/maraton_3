@@ -1,4 +1,7 @@
 @extends('template.module')
+@section('header')
+<link href="{{asset('assets/css/module/demo.css')}}" rel='stylesheet' type='text/css'>
+@endsection
 @section('container')
 <div class="wrapper wrapper-full-page">
     <div class="full-page login-page" data-color="secondary" data-image="{{asset('assets/img/full-screen-image-1.jpg')}}">
@@ -16,11 +19,11 @@
                                 <div class="content">
                                     <div class="form-group">
                                         <label>Usuario</label>
-                                        <input type="email" placeholder="Enter email" class="form-control" id="user_login">
+                                        <input type="text" placeholder="Ingrese usuario" class="form-control" id="user_login" name="email">
                                     </div>
                                     <div class="form-group">
                                         <label>Contraseña</label>
-                                        <input type="password" placeholder="Password" class="form-control" id="user_password">
+                                        <input type="password" placeholder="Password" class="form-control" id="user_password" name="password">
                                     </div>
                                 </div>
                                 <div class="footer text-center">
@@ -40,7 +43,7 @@
 </div>
 @endsection
 @section('footer')
-<script type="text/javascript">
+    <script type="text/javascript">
         $().ready(function(){
             lbd.checkFullPageBackgroundImage();
             setTimeout(function(){
@@ -49,5 +52,7 @@
             }, 700)
         });
     </script>
-
+    <script src="{{asset('assets/js/plugin/sweetalert2.js')}}"></script>
+    <script type="module" src="{{asset('assets/js/scripts/functions.js')}}" type="text/javascript"></script>
+    <script type="module" src="{{asset('assets/js/scripts/login.js')}}" type="text/javascript"></script>
 @endsection
