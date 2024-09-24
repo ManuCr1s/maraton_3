@@ -24,14 +24,24 @@
                                                     <tr>
                                                         <th>ICON</th>
                                                         <th>NOMBRE DE LA CATEGORIA</th>
+                                                        <th>CODIGO DE CATEGORIA</th>
                                                         <th>CANTIDAD DE INSCRITOS</th>
                                                     </tr>
                                                 </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th colspan="3"></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </tfoot>
                                             </table>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-md-offset-1">
-                                        DSDASSDSA
+                                            <p class="category">Grafica de los inscritos por categoria</p>
+                                            <div class="content">
+                                                <div id="chartActivity" class="ct-chart "></div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -92,45 +102,19 @@
             </div>
         </div>
 
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
-            </div>
-        </footer>
-
     </div>
 </div>
 @endsection
 @section('footer')
     <script src="{{asset('assets/js/plugin/sweetalert2.js')}}"></script>
     <script src="{{asset('assets/js/plugin/jquery.datatables.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/sum.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/dataTables.buttons.min.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/buttons.html5.min.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/chartist.min.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/pdfmake.min.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/vfs_fonts.js')}}"></script>
+    <script src="{{asset('assets/js/plugin/jszip.min.js')}}"></script>
     <script type="module" src="{{asset('assets/js/scripts/functions.js')}}" type="text/javascript"></script>
     <script type="module" src="{{asset('assets/js/scripts/dashboard.js')}}" type="text/javascript"></script>
 @endsection

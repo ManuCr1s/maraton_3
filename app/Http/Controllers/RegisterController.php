@@ -135,9 +135,9 @@ class RegisterController extends Controller
     }
     public function levelCount(){
         $register = new Register;
-        $register = Register::join('levels','registers.id_level','=','levels.id_level')
-        ->select('levels.name_level as name')->groupBy('levels.name_level')
-        ->selectRaw('count(levels.name_level) as count')
+        $register = Register::rightJoin('levels','registers.id_level','=','levels.id_level')
+        ->select('levels.name_level as name','levels.cod_level as cod')->groupBy('levels.name_level','levels.cod_level')
+        ->selectRaw('count(registers.id_level) as count')
         ->get();
        /*  return $register; */
         return datatables()->of($register)->toJson();

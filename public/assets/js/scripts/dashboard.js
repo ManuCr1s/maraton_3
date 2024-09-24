@@ -1,5 +1,5 @@
-import {countLevel,sendData} from './functions.js';
+import {countLevel,chartRegister} from './functions.js';
 $(document).ready(function(){
-/*     sendData($('#logout'),'/logout'); */
     countLevel('/level');
+    chartRegister('#chartActivity');
 });
