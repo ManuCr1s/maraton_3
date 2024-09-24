@@ -77,7 +77,6 @@ export function chartRegister(element){
                 label[key] = datos[key].cod;
                 count[key] = datos[key].count;
            }
-           console.log(label);
            var data = {
             labels: label,
             series: [
@@ -90,7 +89,7 @@ export function chartRegister(element){
               axisX: {
                   showGrid: false
               },
-              height: "400px"
+              height: "350px"
           };
         
           var responsiveOptions = [
