@@ -13,7 +13,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">MARATON INTERNACIONAL</a>
+					<a class="navbar-brand" href="#">MARATON</a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -64,13 +64,29 @@
 							<ul class="dropdown-menu dropdown-with-icons">
 								<li>
 									<a href="#">
-										<i class="pe-7s-mail"></i> Perfil
+										<i class="pe-7s-mail"></i> Messages
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="pe-7s-help1"></i> Help Center
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="pe-7s-tools"></i> Settings
 									</a>
 								</li>
 								<li class="divider"></li>
 								<li>
-									<form id='logout'>
-										<button class="btn btn-danger bg-danger">Cerrar Sesion</button>
+									<a href="#">
+										<i class="pe-7s-lock"></i> Lock Screen
+									</a>
+								</li>
+								<li>
+									<form action="{{route('logout')}}" method="POST">
+										@csrf
+										<button class="btn btn-danger">Cerrar Sesion</button>
 									</form>
 								</li>
 							</ul>

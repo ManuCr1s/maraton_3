@@ -101,12 +101,6 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return response()->json([
-            'login'=>[[
-                    'status' => true,
-                    'route' => '/login',
-                    ]
-                ]
-        ]);
+        return redirect('login');
     }
 }

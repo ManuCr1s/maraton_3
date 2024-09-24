@@ -1,5 +1,5 @@
 import {countLevel,sendData} from './functions.js';
 $(document).ready(function(){
-    sendData($('#logout'),'/logout');
+/*     sendData($('#logout'),'/logout'); */
     countLevel('/level');
 });
