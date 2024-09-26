@@ -33,21 +33,21 @@
 					<div class="collapse" id="collapseExample">
 						<ul class="nav">
 							<li>
-								<a href="#pablo">
+								<a href="#">
 									<span class="sidebar-mini">MP</span>
 									<span class="sidebar-normal">Mi Perfil</span>
 								</a>
 							</li>
 
 							<li>
-								<a href="#pablo">
+								<a href="#">
 									<span class="sidebar-mini">EP</span>
 									<span class="sidebar-normal">Editar Perfil</span>
 								</a>
 							</li>
 
 							<li>
-								<a href="#pablo">
+								<a href="#">
 									<span class="sidebar-mini">A</span>
 									<span class="sidebar-normal">Ajustes</span>
 								</a>
@@ -74,19 +74,19 @@
 					<div class="collapse" id="componentsExamples">
 						<ul class="nav">
 							<li>
-								<a href="#">
+								<a href="{{route('enrolled')}}">
 									<span class="sidebar-mini">I</span>
 									<span class="sidebar-normal">Inscritos</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="{{route('numbered')}}">
 									<span class="sidebar-mini">N</span>
 									<span class="sidebar-normal">Numerados</span>
 								</a>
 							</li>	
 							<li>
-								<a href="#">
+								<a href="{{route('low')}}">
 									<span class="sidebar-mini">B</span>
 									<span class="sidebar-normal">Baja</span>
 								</a>

@@ -19,11 +19,11 @@
                                 <div class="content">
                                     <div class="form-group">
                                         <label>Usuario</label>
-                                        <input type="text" placeholder="Ingrese usuario" class="form-control" id="user_login" name="email">
+                                        <input type="text" placeholder="Ingrese usuario" class="form-control" id="user_login" name="email" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Contraseña</label>
-                                        <input type="password" placeholder="Password" class="form-control" id="user_password" name="password">
+                                        <input type="password" placeholder="Password" class="form-control" id="user_password" name="password" required>
                                     </div>
                                 </div>
                                 <div class="footer text-center">
