@@ -43,4 +43,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/dashboard',[UserController::class,'index'])->name('dashboard');
     Route::post('/logout',[UserController::class,'destroy'])->name('logout');
     Route::get('/level',[RegisterController::class,'levelCount'])->name('level');
+    Route::get('/enrolled',[UserController::class,'enrolled'])->name('enrolled');
+    Route::get('/low',[UserController::class,'low'])->name('low');
+    Route::get('/numbered',[UserController::class,'numbered'])->name('numbered');
 });
