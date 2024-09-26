@@ -143,13 +143,27 @@ class RegisterController extends Controller
     {
         //
     }
+    public function inscription(){
+        $register = new Register;
+        $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
+        ->selectRaw('registers.number_doc,registers.name,registers.lastname,levels.name_level,registers.number_ins,registers.born')
+        ->where('registers.number', '=', null)
+        ->where('registers.status', '=', 'true')
+        ->get();
+        return datatables()->of($register)->toJson();
+    }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        if(mb_strlen($request->input('numero')) == 0 ) return json_encode(['status'=>false,'message'=>'Ingrese numero']);
+        $register = Register::find($request->input('dni'));
+        $register->number = $request->input('numero');
+        $register->user = $request->input('user');
+        $register->save();
+        return json_encode(['status'=>true,'message'=>'Se ingreso correctamente']);
     }
 
     /**
