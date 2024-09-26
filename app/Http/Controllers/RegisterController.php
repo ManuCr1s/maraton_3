@@ -146,7 +146,7 @@ class RegisterController extends Controller
     public function inscription(){
         $register = new Register;
         $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
-        ->selectRaw('registers.number_doc,registers.name,registers.lastname,levels.name_level,registers.number_ins,registers.born')
+        ->selectRaw('registers.number_doc,registers.id_level,registers.name,registers.lastname,levels.name_level,registers.number_ins,registers.born')
         ->where('registers.number', '=', null)
         ->where('registers.status', '=', 'true')
         ->get();

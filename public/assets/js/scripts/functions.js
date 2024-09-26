@@ -156,7 +156,8 @@ export function data(nameTable,table,url){
     });
 } 
 export function numberRegister(url){
-    let table = $('#inscritos').DataTable({ 
+
+    let edad,table = $('#inscritos').DataTable({ 
         "ajax":url,
         "dom": 'Bftip',
        "buttons": [
@@ -179,7 +180,33 @@ export function numberRegister(url){
             {data:"lastname"},
             {data:"name_level"},
             {data:"number_ins"},
-            {data:"born"},
+            {
+                render: function(data, type, row) {
+                        switch (row.id_level) {
+                            case 11:
+                                    edad = edades(row.born);
+                                    return (edad.year<50)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            case 3:
+                                    edad = edades(row.born);
+                                    return (edad.year<40 || edad.year>49)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            case 2:
+                                    edad = edades(row.born);
+                                    return (edad.year<14 || edad.year>17)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            case 5:
+                                    edad = edades(row.born);
+                                    return (edad.year<11 || edad.year>14)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            case 6:
+                                    edad = edades(row.born);
+                                    return (edad.year<10 || edad.year>11)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            case 7:
+                                    edad = edades(row.born);
+                                    return (edad.year<6 || edad.year>9)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                            default:
+                                return row.born;
+                        }
+                },
+                orderable: false,                
+            },
             {
                 render: function(data, type, row) {
                     return '<div class="row"><input type="text" id="'+row.number_doc+'" class="form-control"/><button class="editar btn btn-primary p-5"><i class="fa fa-pencil-square"></i></button>';
@@ -189,4 +216,25 @@ export function numberRegister(url){
         ]
     });
     data('#inscritos tbody',table,'/numbered');
+}
+export function edades(nac){
+    let anios =new Date(nac),
+    now = new Date(),
+    year,
+    month,
+    days,
+    edad;
+    year = now.getUTCFullYear() - anios.getUTCFullYear();
+    month = now.getUTCMonth() - anios.getUTCMonth();
+    days= now.getUTCDate() - anios.getUTCDate();
+    if(days < 0){
+        month--;
+        days = 30 + days;
+    }
+    if(month < 0){
+        year--;
+        month = 12 + month;     
+    }
+    edad = year+' años/'+ month+' meses/'+days+' dias';
+    return {'edad':edad,'year':year,'month':month,'days':days};
 }
