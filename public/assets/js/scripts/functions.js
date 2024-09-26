@@ -238,3 +238,33 @@ export function edades(nac){
     edad = year+' años/'+ month+' meses/'+days+' dias';
     return {'edad':edad,'year':year,'month':month,'days':days};
 }
+export function numberFinal(url){
+    let edad,table = $('#registrados').DataTable({ 
+        "ajax":url,
+        "dom": 'Bftip',
+       "buttons": [
+            {
+                extend: 'excel',
+                text: 'Descargar Excel',
+                className:'btn btn-success'
+            },
+            {
+                extend: 'pdf',
+                text: 'Descargar PDF',
+                className:'btn btn-danger'
+            }
+        ],
+        "paging":false,
+        "info":false,
+        "columns":[
+            {data:"number_doc"}, 
+            {data:"name"}, 
+            {data:"lastname"},
+            {data:"name_level"},
+            {data:"number"},
+            {data:"region"},
+            {data:"provincia"},
+            {data:"distrito"},
+        ]
+    });
+}

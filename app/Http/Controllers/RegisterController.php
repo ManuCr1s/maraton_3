@@ -143,6 +143,18 @@ class RegisterController extends Controller
     {
         //
     }
+    public function register(){
+        $register = new Register;
+        $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
+        ->Join('regions', 'regions.id_region', '=', 'registers.id_region')
+        ->Join('provinces', 'provinces.id_province', '=', 'registers.id_province')
+        ->Join('districts', 'districts.id_district', '=', 'registers.id_district')
+        ->select('registers.number_doc','registers.name','registers.lastname','levels.name_level','registers.number','regions.name_region as region','provinces.name_province as provincia','districts.name_district as distrito')
+        ->where('registers.number', '!=', null)
+        ->where('registers.status', '=', 'true')
+        ->get();
+        return datatables()->of($register)->toJson();
+    }
     public function inscription(){
         $register = new Register;
         $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
