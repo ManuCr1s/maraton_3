@@ -20,15 +20,11 @@ class UserController extends Controller
         'password.required' => ['status'=>false,'message'=>'Por ingrese su Contraseña'],
        
     ];
-    public function index()
-    {
-        return view('pages.module.dashboard');
-    }
-    public function login()
-    {
-        return view('pages.module.login');
-    }
-
+    public function index(){return view('pages.module.dashboard');}
+    public function login(){return view('pages.module.login');}
+    public function enrolled(){return view('pages.module.enrolled');}
+    public function low(){return view('pages.module.low');}
+    public function numbered(){return view('pages.module.numbered');}
     /**
      * Show the form for creating a new resource.
      */

@@ -44,14 +44,8 @@ class RegisterController extends Controller
         'addresd.required' => ['status'=>false,'message'=>'Por favor ingrese Direccion'],
         'phone.required' => ['status'=>false,'message'=>'Por favor ingrese Celular'],
     ];
-    public function index()
-    {
-        return view('pages.welcome');
-    }
-
-    public function form(){
-        return view('pages.form');
-    }
+    public function index(){return view('pages.welcome');}
+    public function form(){return view('pages.form');}
     /**
      * Show the form for creating a new resource.
      */
