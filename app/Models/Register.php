@@ -10,4 +10,7 @@ class Register extends Model
     use HasFactory;
     protected $primaryKey = 'number_doc';
     protected $table = 'registers';
+    protected $casts = [
+        'number_doc' => 'string',
+    ];
 }
