@@ -108,3 +108,85 @@ export function chartRegister(element){
         
   
 }
+export function data(nameTable,table,url){
+    $(nameTable).on("click","button.editar",function(){
+        let data = table.row($(this).parents('tr')).data();
+        let user = $('#user').attr('value');
+        let input = $('#'+data.number_doc),datos;
+        swal({
+            title: "¿Esta seguro de registrar numero de corredor?",
+            text: "Esta asignando el numero "+input.val()+" al dni "+data.number_doc,
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          }).then((willDelete) => {
+            if (willDelete) {
+                datos = {
+                    'numero':input.val(),
+                    'dni':data.number_doc,
+                    'user':user
+                };
+                $.ajax({
+                    headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
+                    type:'POST',
+                    url:url,
+                    data:datos,
+                    success:function(data){
+                        let myData = $.parseJSON(data);
+                        if(myData.status){
+                            swal({
+                                title: "Felicitaciones",
+                                text: myData.message,
+                                icon: "success",
+                              }).then(()=>{
+                                window.location.reload(); 
+                            })
+                        }else{
+                            swal({
+                                title: "Upps hubo un problema",
+                                text: myData.message,
+                                icon: "error",
+                              })
+                        }
+                    }
+                });
+            } 
+          });
+        data.number_doc;
+    });
+} 
+export function numberRegister(url){
+    let table = $('#inscritos').DataTable({ 
+        "ajax":url,
+        "dom": 'Bftip',
+       "buttons": [
+            {
+                extend: 'excel',
+                text: 'Descargar Excel',
+                className:'btn btn-success'
+            },
+            {
+                extend: 'pdf',
+                text: 'Descargar PDF',
+                className:'btn btn-danger'
+            }
+        ],
+        "paging":false,
+        "info":false,
+        "columns":[
+            {data:"number_doc"}, 
+            {data:"name"}, 
+            {data:"lastname"},
+            {data:"name_level"},
+            {data:"number_ins"},
+            {data:"born"},
+            {
+                render: function(data, type, row) {
+                    return '<div class="row"><input type="text" id="'+row.number_doc+'" class="form-control"/><button class="editar btn btn-primary p-5"><i class="fa fa-pencil-square"></i></button>';
+                },
+                orderable: false,
+            }
+        ]
+    });
+    data('#inscritos tbody',table,'/numbered');
+}
