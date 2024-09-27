@@ -189,7 +189,7 @@ export function numberRegister(url){
                             case 3:
                                     edad = edades(row.born);
                                     return (edad.year<40 || edad.year>49)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
-                            case 2:
+                            case 4:
                                     edad = edades(row.born);
                                     return (edad.year<14 || edad.year>17)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             case 5:
