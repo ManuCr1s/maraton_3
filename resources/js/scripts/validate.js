@@ -1,4 +1,4 @@
-import {valueInput,numberInput,inputNull} from './functions';
+import {valueInput,numberInput,inputNull,inputDate} from './functions';
 export function validateForm(objeto){
     if(valueInput(objeto.level)&& objeto.level.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Categoria'}}
     if(valueInput(objeto.gender)&& objeto.gender.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Genero'}}
@@ -7,8 +7,17 @@ export function validateForm(objeto){
     if(numberInput(objeto.number)&& objeto.number.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese numero de Documento'}}
     if(inputNull(objeto.name)&& objeto.name.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Nombre de Persona'}}
     if(inputNull(objeto.lastname)&& objeto.lastname.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Apellido de Persona'}}
-    if(inputNull(objeto.date)&& objeto.date.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Fecha de Nacimiento'}}
-    return {status:false}
+    if(inputNull(objeto.date)&& objeto.date.closest('fieldset').css('display') === 'block'){
+        return {status:true,message:'Por favor Ingrese Fecha de Nacimiento'}
+    }else{
+        let dateInput = inputDate(objeto.date,objeto.level);
+        if(dateInput.status){
+            return dateInput;
+        }else{
+            return {status:false};
+        }
+    }
+    return {status:false};
 }
 export function sendForm(objeto){
     if(objeto.country.val() ==='1'){

@@ -8,6 +8,44 @@ export function numberInput(input){
 export function inputNull(input) {
     return (input.val().length > 0)?false:true;
 }
+export function edades(nac){
+    let anios =new Date(nac),
+    now = new Date(),
+    year,
+    month,
+    days,
+    edad;
+    year = now.getUTCFullYear() - anios.getUTCFullYear();
+    month = now.getUTCMonth() - anios.getUTCMonth();
+    days= now.getUTCDate() - anios.getUTCDate();
+    if(days < 0){
+        month--;
+        days = 30 + days;
+    }
+    if(month < 0){
+        year--;
+        month = 12 + month;     
+    }
+    edad = year+' años/'+ month+' meses/'+days+' dias';
+    return {'edad':edad,'year':year,'month':month,'days':days};
+}
+export function inputDate(input,level) {
+    let edad = edades(input.val());
+    switch (level.val()) {
+        case '11':
+                return (edad.year<50)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+        case '3':
+                return (edad.year<40 || edad.year>49)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+        case '4':
+                return (edad.year<14 || edad.year>17)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+        case '5':
+                return (edad.year<11 || edad.year>14)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+        case '6':
+                return (edad.year<10 || edad.year>11)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+        case '7':
+                return (edad.year<6 || edad.year>9)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+    }
+}
 export function chainSelected(a,b) {
      a.on('change',function(){
             if(a.val()==='1'){
