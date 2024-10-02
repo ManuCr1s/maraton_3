@@ -180,6 +180,7 @@ export function numberRegister(url){
             {data:"lastname"},
             {data:"name_level"},
             {data:"number_ins"},
+            {data:"phone"},
             {
                 render: function(data, type, row) {
                         switch (row.id_level) {

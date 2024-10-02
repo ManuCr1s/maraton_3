@@ -29,6 +29,7 @@
                                                         <th>APELLIDOS INSCRITO</th>
                                                         <th>CATEGORIA</th>
                                                         <th>NUMERO INSCRITO</th>
+                                                        <th>NUMERO CELULAR</th>
                                                         <th>NACIMIENTO</th>
                                                         <th>NUMERO CORREDOR</th>
                                                     </tr>
