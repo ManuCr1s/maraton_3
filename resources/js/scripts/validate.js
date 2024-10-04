@@ -7,16 +7,8 @@ export function validateForm(objeto){
     if(numberInput(objeto.number)&& objeto.number.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese numero de Documento'}}
     if(inputNull(objeto.name)&& objeto.name.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Nombre de Persona'}}
     if(inputNull(objeto.lastname)&& objeto.lastname.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Apellido de Persona'}}
-    if(inputNull(objeto.date)&& objeto.date.closest('fieldset').css('display') === 'block'){
-        return {status:true,message:'Por favor Ingrese Fecha de Nacimiento'}
-    }else{
-        let dateInput = inputDate(objeto.date,objeto.level);
-        if(dateInput.status){
-            return dateInput;
-        }else{
-            return {status:false};
-        }
-    }
+    if(inputNull(objeto.date)&& objeto.date.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Fecha de Nacimiento'}}
+    if(inputDate(objeto.date,objeto.level)&& objeto.date.closest('fieldset').css('display') === 'block'){return {status:true,message:'Usted no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria'}};
     return {status:false};
 }
 export function sendForm(objeto){

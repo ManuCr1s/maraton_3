@@ -33,17 +33,17 @@ export function inputDate(input,level) {
     let edad = edades(input.val());
     switch (level.val()) {
         case '11':
-                return (edad.year<50)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<50);
         case '3':
-                return (edad.year<40 || edad.year>49)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<40 || edad.year>49);
         case '4':
-                return (edad.year<14 || edad.year>17)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<14 || edad.year>17);
         case '5':
-                return (edad.year<11 || edad.year>14)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<11 || edad.year>14);
         case '6':
-                return (edad.year<10 || edad.year>11)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<10 || edad.year>11);
         case '7':
-                return (edad.year<6 || edad.year>9)?{status:true,message:`Usted tiene ${edad.year} años, no pertenece a esta categoria, por favor revise su fecha de nacimiento o escoja otra categoria`}:{status:false};
+                return (edad.year<6 || edad.year>9);
     }
 }
 export function chainSelected(a,b) {
