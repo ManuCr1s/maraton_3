@@ -139,12 +139,21 @@ class RegisterController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit()
     {
-        //
+        $register = new Register;   
+        $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
+        ->Join('regions', 'regions.id_region', '=', 'registers.id_region')
+        ->Join('provinces', 'provinces.id_province', '=', 'registers.id_province')
+        ->Join('districts', 'districts.id_district', '=', 'registers.id_district')
+        ->select('registers.dniold','registers.name','registers.lastname','levels.name_level','registers.number_ins','registers.phone','regions.name_region as region','provinces.name_province as provincia','districts.name_district as distrito')
+        ->where('registers.number', '=', null)
+        ->where('registers.status', '=', 'false')
+        ->get();
+        return datatables()->of($register)->toJson();
     }
     public function register(){
-        $register = new Register;
+        $register = new Register;   
         $register = Register::Join('levels', 'registers.id_level', '=', 'levels.id_level')
         ->Join('regions', 'regions.id_region', '=', 'registers.id_region')
         ->Join('provinces', 'provinces.id_province', '=', 'registers.id_province')

@@ -263,9 +263,64 @@ export function numberFinal(url){
             {data:"lastname"},
             {data:"name_level"},
             {data:"number"},
-            {data:"region"},
-            {data:"provincia"},
-            {data:"distrito"},
+            {
+                render: function(data, type, row) {
+                    return row.region.toUpperCase();
+                } 
+            },         
+            {
+                render: function(data, type, row) {
+                    return row.provincia.toUpperCase();
+                } 
+            },
+            {
+                render: function(data, type, row) {
+                    return row.distrito.toUpperCase();
+                } 
+            },
+        ]
+    });
+}
+export function numberLow(url){
+    let datatable = $('#bajas').DataTable({
+        "ajax":url,
+        "dom": 'Bftip',
+       "buttons": [
+            {
+                extend: 'excel',
+                text: 'Descargar Excel',
+                className:'btn btn-success'
+            },
+            {
+                extend: 'pdf',
+                text: 'Descargar PDF',
+                className:'btn btn-danger'
+            }
+        ],
+        "paging":false,
+        "info":false,
+        "columns":[
+            {data:"dniold"}, 
+            {data:"name"}, 
+            {data:"lastname"},
+            {data:"name_level"},
+            {data:"number_ins"},
+            {data:"phone"},
+            {
+                render: function(data, type, row) {
+                    return row.region.toUpperCase();
+                } 
+            },         
+            {
+                render: function(data, type, row) {
+                    return row.provincia.toUpperCase();
+                } 
+            },
+            {
+                render: function(data, type, row) {
+                    return row.distrito.toUpperCase();
+                } 
+            },
         ]
     });
 }

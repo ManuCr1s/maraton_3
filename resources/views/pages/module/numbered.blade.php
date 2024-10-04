@@ -29,6 +29,7 @@
                                                             <th>APELLIDOS</th>
                                                             <th>CATEGORIA</th>
                                                             <th>NUMERO</th>
+                                                            <th>NUMERO CELULAR</th>
                                                             <th>REGION</th>
                                                             <th>PROVINCIA</th>
                                                             <th>DISTRITO</th>
@@ -49,9 +50,7 @@
 </div>
 @endsection
 @section('footer')
-    <script src="{{asset('assets/js/plugin/sweetalert2.js')}}"></script>
     <script src="{{asset('assets/js/plugin/jquery.datatables.js')}}"></script>
-    <script src="{{asset('assets/js/plugin/sum.js')}}"></script>
     <script src="{{asset('assets/js/plugin/dataTables.buttons.min.js')}}"></script>
     <script src="{{asset('assets/js/plugin/buttons.html5.min.js')}}"></script>
     <script src="{{asset('assets/js/plugin/chartist.min.js')}}"></script>

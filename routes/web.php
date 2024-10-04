@@ -49,4 +49,5 @@ Route::middleware('auth')->group(function(){
     Route::get('/inscriptions',[RegisterController::class,'inscription'])->name('inscriptions');
     Route::post('/numbered',[RegisterController::class,'update'])->name('updated');
     Route::get('/final',[RegisterController::class,'register'])->name('final');
+    Route::get('/lower',[RegisterController::class,'edit'])->name('lower');
 });
