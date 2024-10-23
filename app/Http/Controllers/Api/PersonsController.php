@@ -49,13 +49,15 @@ class PersonsController extends Controller
                 }else if(property_exists($person,'nombres')){
                     $person->status = true;
                 }else if($person->message == 'dni no valido'){
-                    $person->status = false;
-                    $person->message = 'Por favor ingrese un DNI valido';
+                    $person->status = true;
+                    $person->apellidoPaterno = '';
+                    $person->apellidoMaterno = '';
+                    $person->message = 'Por favor verifique su DNI y registre su nombre y apellido';
                 }else if($person->message == 'not found'){
                     $person->status = true;
                     $person->apellidoPaterno = '';
                     $person->apellidoMaterno = '';
-                    $person->message = 'Por favor registre sus nombres y apellidos';
+                    $person->message = 'Por favor ingrese sus nombres y apellidos';
                 }
             }else{
                 $person->status = true;
