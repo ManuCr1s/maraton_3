@@ -192,16 +192,16 @@ export function numberRegister(url){
                                     return (edad.year<40 || edad.year>49)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             case 4:
                                     edad = edades(row.born);
-                                    return (edad.year<14 || edad.year>17)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                                    return (edad.year<=14 || edad.year>17)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             case 5:
                                     edad = edades(row.born);
-                                    return (edad.year<11 || edad.year>14)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                                    return (edad.year<=11 || edad.year>14)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             case 6:
                                     edad = edades(row.born);
                                     return (edad.year<10 || edad.year>11)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             case 7:
                                     edad = edades(row.born);
-                                    return (edad.year<6 || edad.year>9)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
+                                    return (edad.year<=6 || edad.year>9)?'<div class="row bg-danger">Tiene '+edad.edad+' '+row.born+'</div>':row.born;
                             default:
                                 return row.born;
                         }

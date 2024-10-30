@@ -37,13 +37,13 @@ export function inputDate(input,level) {
         case '3':
                 return (edad.year<40 || edad.year>49);
         case '4':
-                return (edad.year<14 || edad.year>17);
+                return (edad.year<=14 || edad.year>17);
         case '5':
-                return (edad.year<11 || edad.year>14);
+                return (edad.year<=11 || edad.year>14);
         case '6':
                 return (edad.year<10 || edad.year>11);
         case '7':
-                return (edad.year<6 || edad.year>9);
+                return (edad.year<=6 || edad.year>9);
     }
 }
 export function chainSelected(a,b) {
