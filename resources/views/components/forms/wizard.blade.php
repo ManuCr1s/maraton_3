@@ -1,5 +1,17 @@
 <!-- MultiStep Form -->
 <div class="row">
+    <div id="count_level" class="d-none">
+                    <span class="badge badge-secondary badge-level" id="EV"></span>
+                    <span class="badge badge-secondary badge-level" id="EM"></span>                          
+                    <span class="badge badge-secondary badge-level" id="MM"></span>
+                    <span class="badge badge-secondary badge-level" id="JU"></span>
+                    <span class="badge badge-secondary badge-level" id="MEN"></span>
+                    <span class="badge badge-primary badge-level" id="JUN"></span>
+                    <span class="badge badge-secondary badge-level" id="IN"></span>
+                    <span class="badge badge-secondary badge-level" id="HESM"></span>
+                    <span class="badge badge-secondary badge-level" id="HECG"></span>
+                    <span class="badge badge-secondary badge-level" id="SM"></span>
+    </div>
     <div class="col-md-12 col-md-offset-3 mt-5">
         <form id="msform">
             <!-- progressbar -->

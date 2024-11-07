@@ -1,3 +1,6 @@
+import { data } from "jquery";
+import { countLevel } from "../../../public/assets/js/scripts/functions";
+
 export function valueInput(input){
     return input.val() === "0"
 };
@@ -8,6 +11,83 @@ export function numberInput(input){
 export function inputNull(input) {
     return (input.val().length > 0)?false:true;
 }
+export function levelMax() {
+    $("#preloader").show(); 
+    $.ajax({
+        headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
+        type:'POST',
+        url:'/level',
+        success:function(data){
+            let response = data.data;       
+            for (const key in response) {
+                    const opcion = $('#'+response[key].cod);
+                    opcion.text(response[key].count);
+            }
+        },
+    });
+}
+export function countMax(level){
+    let elements = document.querySelectorAll('.badge-level');
+    let valuesObject = {};
+    elements.forEach((element) => {
+        valuesObject[element.id] = element.textContent.trim();
+    });
+    switch (level.val()) {
+        case '11':
+            return valuesObject['SM']>100; 
+        case '1':
+            return valuesObject['EV']>110; 
+        case '2':
+            return valuesObject['EM']>40;  
+        case '3':
+            return valuesObject['MM']>180; 
+        case '4':
+            return valuesObject['JU']>120; 
+        case '5':
+            return valuesObject['MEN']>180; 
+        case '6':
+            return valuesObject['JUN']>120; 
+        case '7':
+            return valuesObject['IN']>170; 
+        case '8':
+            return valuesObject['HESM']>50; 
+        case '9':
+            return valuesObject['HECG']>50; 
+    }
+}
+/* export function levelMax(level){
+    $("#preloader").show();
+    let response = $.ajax({
+        headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
+        type:'POST',
+        url:'/level'
+    }).then((data)=>{
+        switch (level.val()) {
+            case '11':
+                return data.data[9].count>30; 
+            case '1':
+                return false;
+            case '2':
+                return data.data[0].count>10;  
+            case '3':
+                return false;
+            case '4':
+                return false;
+            case '5':
+                return false;
+            case '6':
+                return false;
+            case '7':
+                return false;
+            case '8':
+                return false;
+            case '9':
+                return false;
+        }
+    });
+    $("#preloader").hide();
+    return response;
+} */
 export function edades(nac){
     let anios =new Date(nac),
     now = new Date(),

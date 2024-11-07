@@ -210,7 +210,7 @@ export function numberRegister(url){
             },
             {
                 render: function(data, type, row) {
-                    return '<div class="row"><input type="text" id="'+row.number_doc+'" class="form-control"/><button class="editar btn btn-primary p-5"><i class="fa fa-pencil-square"></i></button>';
+                    return '<div class="row"><input type="text" id="'+row.number_doc+'" class="form-control"/><button class="editar btn btn-primary p-3"><i class="fa fa-pencil-square"></i></button>';
                 },
                 orderable: false,
             }

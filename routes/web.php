@@ -24,6 +24,7 @@ Route::controller(RegisterController::class)->group(function(){
     Route::post('/register','store')->name('register');
     Route::get('/documents/{nombreArchivo}','create')->name('download');
     Route::post('/verification','verificationDni')->name('verification');
+    Route::post('/level',[RegisterController::class,'levelCount'])->name('levelPublic');
 })->middleware('guest');
 Route::controller(CountryController::class)->group(function(){
     Route::post('/country','index')->name('country');

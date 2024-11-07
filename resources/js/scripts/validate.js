@@ -1,7 +1,10 @@
-import {valueInput,numberInput,inputNull,inputDate} from './functions';
+import {valueInput,numberInput,inputNull,inputDate,countMax} from './functions';
+
 export function validateForm(objeto){
+    
     if(valueInput(objeto.level)&& objeto.level.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Categoria'}}
     if(valueInput(objeto.gender)&& objeto.gender.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Genero'}}
+    if(countMax(objeto.level)&& objeto.level.closest('fieldset').css('display') === 'block'){return {status:true,message:'Lamentamos informar que ya no se puede registar a esta categoria'}} 
     if(valueInput(objeto.country)&& objeto.country.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Pais'}}
     if(valueInput(objeto.type)&& objeto.type.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Tipo de Documento'}}
     if(numberInput(objeto.number)&& objeto.number.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese numero de Documento'}}
@@ -9,7 +12,8 @@ export function validateForm(objeto){
     if(inputNull(objeto.lastname)&& objeto.lastname.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Apellido de Persona'}}
     if(inputNull(objeto.date)&& objeto.date.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Fecha de Nacimiento'}}
     if(inputDate(objeto.date,objeto.level)&& objeto.date.closest('fieldset').css('display') === 'block'){return {status:true,message:'Usted no pertenece a esta categoria por no cumplir con edad, por favor revise su fecha de nacimiento o escoja otra categoria'}};
-    return {status:false};
+    return {status:false}; 
+
 }
 export function sendForm(objeto){
     if(objeto.country.val() ==='1'){
