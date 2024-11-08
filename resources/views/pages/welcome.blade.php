@@ -6,12 +6,17 @@
 <div class="container-fluid">
         <div class="container bg-white">
             <div class="row justify-content-between m-0">
-                <ul class="list">
-                    <li class="item__list"><i class="fa-brands fa-square-facebook icon-button"></i></li>
-                    <li class="item__list"><i class="fa-brands fa-tiktok icon-button"></i></li>
-                    <li class="item__list"><i class="fa-brands fa-youtube icon-button"></i></li>
-                    <li class="item__list" id="icon-test"><i class="fa-brands fa-square-x-twitter icon-button"></i></li>
-                </ul>
+                <div class="col-4">
+                    <ul class="list mt-4 pt-2">
+                        <li class="item__list"><i class="fa-brands fa-square-facebook icon-button"></i></li>
+                        <li class="item__list"><i class="fa-brands fa-tiktok icon-button"></i></li>
+                        <li class="item__list"><i class="fa-brands fa-youtube icon-button"></i></li>
+                        <li class="item__list" id="icon-test"><i class="fa-brands fa-square-x-twitter icon-button"></i></li>
+                    </ul>
+                </div>
+                
+             
+
                 <x-modals.main/>              
             </div>
             <hr class="separator">
@@ -29,11 +34,7 @@
             <hr>
             <br>
             <div class="row justify-content-center">
-                <div class="col-6">
-                    <h6 class="text-body_max">TOTAL DE INSCRITOS A LA MARATON 2024</h6>
-                    <h5 class="text-body_date"><span id="total_maraton"></span> INSCRITOS</h5>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <h6 class="text-body_max">FECHA MAXIMA DE INSCRIPCION</h6>
                     <h5 class="text-body_date">8 DE NOVIEMBRE DEL 2024</h5>
                 </div>
