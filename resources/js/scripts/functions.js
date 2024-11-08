@@ -89,22 +89,20 @@ export function countMax(level){
     $("#preloader").hide();
     return response;
 } */
-/* export function countTotal(){
+export function countTotal(){
     $("#preloader").show(); 
+    let count = $('#total_maraton');
     $.ajax({
         headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
         type:'POST',
-        url:'/level',
-        success:function(data){
-            let response = data.data;       
-            for (const key in response) {
-                    const opcion = $('#'+response[key].cod);
-                    opcion.text(response[key].count);
-            }
+        url:'/total',
+        success:function(data){  
+            console.log(data);  
+            count.text(data);
             $("#preloader").hide(); 
         },
     });
-} */
+}
 export function edades(nac){
     let anios =new Date(nac),
     now = new Date(),
