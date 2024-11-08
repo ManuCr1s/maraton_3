@@ -6,7 +6,7 @@
     <div class="container-fluid" id="container">
         <div class="container" id="container__form">
             <x-navs.secondary/>
-            <x-forms.wizard/> 
+          <!--   <x-forms.wizard/>  -->
         </div>
        
     </div>
