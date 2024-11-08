@@ -1,3 +1,8 @@
+<div class="row">
+    <div class="col-12">
+         <h4 class="title__main--main">SOMOS UN TOTAL DE <span id="total_maraton"></span> INSCRITOS</h4>
+    </div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light pt-5">
     <a class="navbar-brand d-flex" href="{{route('home')}}">
         <i class="fa-solid fa-person-running logo__icon"></i>

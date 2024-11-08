@@ -48,6 +48,11 @@
         color: rgb(255, 247, 242);
         letter-spacing: 5px;
     }
+    .title-menu--main{
+        font-size: 18px;
+        color: rgb(255, 247, 242);
+        letter-spacing: 5px;
+    }
     .navbar-toggler-icon{
         width: 1em;
         height: 1em;
@@ -234,7 +239,11 @@
         color: rgb(255, 247, 242);
         letter-spacing: 5px;
     }
-
+    .title-menu--main{
+        font-size: 16px;
+        color: rgb(255, 247, 242);
+        letter-spacing: 5px;
+    }
     .form-step{
         background: white;
         border: 0 none;

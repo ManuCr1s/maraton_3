@@ -29,7 +29,11 @@
             <hr>
             <br>
             <div class="row justify-content-center">
-                <div class="col-12">
+                <div class="col-6">
+                    <h6 class="text-body_max">TOTAL DE INSCRITOS A LA MARATON 2024</h6>
+                    <h5 class="text-body_date"><span id="total_maraton"></span> INSCRITOS</h5>
+                </div>
+                <div class="col-6">
                     <h6 class="text-body_max">FECHA MAXIMA DE INSCRIPCION</h6>
                     <h5 class="text-body_date">8 DE NOVIEMBRE DEL 2024</h5>
                 </div>

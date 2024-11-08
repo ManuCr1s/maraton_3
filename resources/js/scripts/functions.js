@@ -23,6 +23,7 @@ export function levelMax() {
                     const opcion = $('#'+response[key].cod);
                     opcion.text(response[key].count);
             }
+            $("#preloader").hide(); 
         },
     });
 }
@@ -36,19 +37,19 @@ export function countMax(level){
         case '11':
             return valuesObject['SM']>100; 
         case '1':
-            return valuesObject['EV']>110; 
+            return valuesObject['EV']>109; 
         case '2':
             return valuesObject['EM']>50;  
         case '3':
-            return valuesObject['MM']>180; 
+            return valuesObject['MM']>179; 
         case '4':
-            return valuesObject['JU']>120; 
+            return valuesObject['JU']>119; 
         case '5':
-            return valuesObject['MEN']>180; 
+            return valuesObject['MEN']>179; 
         case '6':
-            return valuesObject['JUN']>120; 
+            return valuesObject['JUN']>119; 
         case '7':
-            return valuesObject['IN']>170; 
+            return valuesObject['IN']>169; 
         case '8':
             return valuesObject['HESM']>50; 
         case '9':
@@ -87,6 +88,22 @@ export function countMax(level){
     });
     $("#preloader").hide();
     return response;
+} */
+/* export function countTotal(){
+    $("#preloader").show(); 
+    $.ajax({
+        headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
+        type:'POST',
+        url:'/level',
+        success:function(data){
+            let response = data.data;       
+            for (const key in response) {
+                    const opcion = $('#'+response[key].cod);
+                    opcion.text(response[key].count);
+            }
+            $("#preloader").hide(); 
+        },
+    });
 } */
 export function edades(nac){
     let anios =new Date(nac),
