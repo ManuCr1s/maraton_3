@@ -38,7 +38,7 @@ export function countMax(level){
         case '1':
             return valuesObject['EV']>110; 
         case '2':
-            return valuesObject['EM']>40;  
+            return valuesObject['EM']>50;  
         case '3':
             return valuesObject['MM']>180; 
         case '4':
