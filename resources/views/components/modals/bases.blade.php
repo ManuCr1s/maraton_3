@@ -196,6 +196,152 @@ y entrega al término de la prueba en el Estadio Daniel Alcides Carrión donde s
 todos los atletas</p>
                 </li>
               </ul>
+              <br>
+                  <h6 class="text-left"><b>Artículo 7. DEL CONTROL DE LA COMPETENCIA</b></h6>
+                  <ul>
+                    <li>
+                      <p class="text-left m-0">Cada categoría contara con puntos de control ubicados estratégicamente en las rutas correspondientes.</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">El control estará a cargo de la Comisión Organizadora; IPD- Pasco, Liga de Atletismo de Pasco y
+Asociación de Jueces y otros involucrados</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Se contará con 8 avituallamientos de 5 kilómetros cada uno</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Teniendo en cuenta que el cierre de tránsito tiene un rango horario fijado por las autoridades, para
+garantizar la seguridad en ruta de todos los participantes, la organización ha establecido un tiempo
+máximo para completar la Carrera, el cual será de 4 horas. En tal sentido, los atletas que no hayan pasado
+por los controles en los siguientes puntos, no contarán con tránsito restringido, ni el control de
+cronometraje, ni tiempo correspondiente</p>
+                    </li>
+                  </ul>
+                  <br>
+                  <h6 class="text-left"><b>Artículo 8. REGLAMENTO Y OBLIGACIONES DEL CORREDOR</b></h6>
+                  <ul>
+                    <li>
+                      <p class="text-left m-0">El participante deberá cumplir con la totalidad del recorrido, pasando por todos y cada uno de los puestos
+de control, de manera que los jueces de control técnico puedan leer el número de competencia.</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">La organización se reserva el derecho de realizar controles antidopaje a cualquier participante hombre o
+mujer que finalice la carrera correspondiente. El negarse a dicho control será motivo de descalificación
+inmediata para el/la participante</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Para todos los participantes, será obligatorio el uso de la camiseta oficial de la carrera desde la partida
+hasta el término de esta.</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Todo aquel participante que corra sin número, lo hace bajo su responsabilidad, y no tendrá derecho a
+ninguna de las prerrogativas a las que tienen derecho los/las atletas oficialmente inscritas</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">El atleta que interfiera el paso de otro atleta será descalificado</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">los atletas se formarán en el orden que señale el juez de salida</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Queda estrictamente PROHIBIDO recibir apoyo alguno de extraños de la prueba, de igual forma
+acompañamiento de cualquier tipo de vehículo motorizado o no motorizado que no esté autorizado por la
+comisión organizadora, eso conllevaría a la descalificación del atleta</p>
+                    </li>
+                  </ul>
+                  <br>
+                  <h6 class="text-left"><b>Artículo 9. DESCALIFICACIONES</b></h6>
+                  <p class="text-left m-0">Serán descalificados los que</p>
+                  <ul>
+                    <li>
+                      <p class="text-left m-0">Corredores que no lleven el número oficial de la competencia visible y puesto correctamente en el pecho</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Los corredores que no realicen el recorrido siguiendo el trazado oficial de la prueba y/o no pasen por los
+puntos de control establecidos, con el número de competencia (en el pecho) visible y destapado y/o no
+corren a lo largo de toda la ruta oficial a pie y con propio esfuerzo (p.ej. subiendo a bicicleta, moto, auto,
+o cualquier tipo de movilización que no sea la pedestre)</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que crucen la meta sin polo o sin número de competencia</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que reciban ayuda de marcaje de ritmo por atletas no inscritos</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que durante la competencia no circulen por los lugares indicados y línea trazada del recorrido
+(las veredas no son parte del tramo de la ruta y están prohibidas de usar).</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que no atiendan las disposiciones de los jueces o del personal de la Organización
+debidamente acreditados</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que muestran comportamiento y/o conducta antideportiva (insultos a personal, jueces,
+participantes, etc.).</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Corredores que dan positivo en una prueba de dopaje.</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Atletas élite que sean hidratados fuera de los puntos oficiales señalados en el plano del recorrido por
+personal ajeno a la organización, sea a pie o desde cualquier tipo de vehículo</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Atleta que reciba asistencia técnica dentro del área olímpica de la competencia será descalificado</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Atleta que cruce la meta con acompañamiento</p>
+                    </li>
+                  </ul>
+                  <br>
+                  <h6 class="text-left"><b>Artículo 10. DE LA PREMIACION</b></h6>
+                  <ul>
+                    <li>
+                      <p class="text-left m-0">Una vez concluido la competencia se realizará la premiación correspondiente a los ganadores de acuerdo
+a las bases establecidas</p>
+                    </li>
+                    <li>
+                      <p class="text-left m-0">Los atletas ganadores en las categorías deberán presentar su DNI original para su premiación.</p>
+                    </li>
+                  </ul>
+                  <br>
+                  <h6 class="text-left"><b>Artículo 11. VEHICULOS EN EL RECORRIDO</b></h6>
+                  <p class="text-left m-0">
+                    Los únicos vehículos autorizados a seguir la prueba son los designados por la organización, los cuales deben
+portar visiblemente la credencial correspondiente. Queda totalmente prohibido seguir a los corredores/as en moto,
+bicicleta u otro vehículo teniendo orden expresa PNP y seguridad especial del evento, de retirarlos del circuito,
+para evitar que se produzca cualquier accidente a los corredores
+                  </p>
+                     <br>
+                  <h6 class="text-left"><b>Artículo 12. RESPONSABILIDAD</b></h6>
+                  <p class="text-left m-0">
+                   La Organización declara haber tomado todas las precauciones adecuadas para poder realizar un Evento y Carrera
+seguros y sin accidentes previsibles. Sin embargo, la Organización no asume ninguna responsabilidad por daños
+que pueda ocasionar un atleta a sí mismo, a otras personas; o en su defecto, no se responsabiliza en el caso de
+que terceras personas (espectadores, choferes de vehículos ajenos a la organización, etc.) causen daños al
+participante u organización. Los participantes declaran que aceptan, por el hecho de inscribirse, la condición
+anteriormente expuesta y se comprometen con la organización para evitar accidentes personales y daños
+materiales.
+Cualquier situación imprevisible, fortuita o de fuerza mayor no podrá generar responsabilidad en la Organización
+                  </p>
+                      <br>
+                  <h6 class="text-left"><b>Artículo 13. DESCARGO DE RESPONSABILIDADES</b></h6>
+                  <p class="text-left m-0">
+                  La organización recomienda al participante realizar un chequeo médico que valide su condición física e idoneidad
+para ser parte del Evento y Carrera y que siga las opiniones de un experto sobre su participación. Partiendo de
+esa premisa, la organización entiende que por el solo hecho de inscribirse y completar el proceso de inscripción
+en la página web, el participante ha leído y aceptado los términos y condiciones, lo cual incluye su declaración de
+encontrarse en óptimo estado de salud y en condiciones físicas para participar en el Evento y Carrera.
+En línea de esta declaración, el participante reconoce que la Organización, auspiciadores, patrocinadores y otras
+instituciones participantes no tienen responsabilidad por cualquier lesión o dolencia que pudiere sufrir antes durante y/o después de la Carrera
+                  </p>
+                      <br>
+                  <h6 class="text-left"><b>Artículo 14. OTRAS DISPOSICIONES</b></h6>
+                  <p class="text-left m-0">
+                  Los puntos no acotados en la presente Bases se regirán por el Reglamento Nacional de Atletismo, o en todo caso
+la Comisión Organizadora es autónoma en sus decisiones para resolver casos complejos.
+                  </p>
       </div>
       <div class="modal-footer">
 
