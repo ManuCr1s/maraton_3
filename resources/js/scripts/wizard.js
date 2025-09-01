@@ -8,6 +8,9 @@ import jsPDF from 'jspdf';
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
+  $(document).ready(function(){
+    $('#staticBackdrop').modal('show');
+  });
 $(".next").click(function(){
 
 	let validate = validateForm(APP_INPUT);

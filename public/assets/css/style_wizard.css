@@ -2,8 +2,8 @@
  /*basic reset*/
 #container{
     padding: 5% 0;
-    background: #022385;
-    background: -webkit-linear-gradient(#022385,#0088CA);
+    background: #022385;    
+    background: -webkit-linear-gradient(#040404,#141414);
 }   
 #container__form{
     font-family: montserrat, arial, verdana;
@@ -145,7 +145,7 @@
         margin-bottom: 20px;
     }
     .form-step__icon{
-        color: #0088CA;
+        color: #7c9f78;
         font-size: 50px;
         padding: 3%;
         margin: 3%;
@@ -158,7 +158,7 @@
     }
     .form-step__control{
         border: 0;
-        border-bottom: 1px solid #0088CA;
+        border-bottom: 1px solid #7c9f78;
         margin: 0 0 2% 0;
         border-radius: 0;
     }
@@ -171,7 +171,7 @@
     }
     .form-step__block{
         letter-spacing: 5px;
-        color: #0088CA;
+        color: #7c9f78;
         font-size: 10px;
         margin-top: 10px;
     }
@@ -183,7 +183,7 @@
     display: none;
 }
 .action-button {
-    background: #0088CA;
+    background: #7c9f78;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -272,7 +272,7 @@
         margin-bottom: 20px;
     }
     .form-step__icon{
-        color: #0088CA;
+        color: #7c9f78;
         font-size: 50px;
         padding: 3%;
         margin: 3%;
@@ -285,7 +285,7 @@
     }
     .form-step__control{
         border: 0;
-        border-bottom: 1px solid #0088CA;
+        border-bottom: 1px solid #7c9f78;
         margin: 0 0 2% 0;
         border-radius: 0;
     }
@@ -298,14 +298,14 @@
     }
     .form-step__block{
         letter-spacing: 5px;
-        color: #0088CA;
+        color: #7c9f78;
     }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
 }
 .action-button {
-    background: #0088CA;
+    background: #7c9f78;
     font-weight: bold;
     color: white;
     border: 0 none;

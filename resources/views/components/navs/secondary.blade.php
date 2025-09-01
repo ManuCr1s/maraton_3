@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 d-none">
          <h4 class="title__main--main">SOMOS UN TOTAL DE <span id="total_maraton"></span> INSCRITOS</h4>
     </div>
 </div>
@@ -10,7 +10,7 @@
             <div class="row title__secondary">MARATON INTERNACIONAL</div>
             <div class="row title__main">MESETA DEL</div>
             <div class="row title__main--main">BOMBON</div>
-            <div class="row title__secondary">NOVIEMBRE 10, 2024</div>
+            <div class="row title__secondary">NOVIEMBRE 10, 2025</div>
         </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
