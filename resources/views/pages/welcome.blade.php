@@ -71,34 +71,34 @@
           <nav class="float-left">
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
+                <a href="#">
+                  
                 </a>
               </li>
               <li>
-                <a href="https://creative-tim.com/presentation">
-                  About Us
+                <a href="#">
+                  Facebook
                 </a>
               </li>
               <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
+                <a href="#">
+                  Tik Tok
                 </a>
               </li>
               <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
+                <a href="#">
+                  Youtube
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="copyright float-right">
+       <!--    <div class="copyright float-right">
             &copy;
             <script>
               document.write(new Date().getFullYear())
             </script>, made with <i class="material-icons">favorite</i> by
             <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
+          </div> -->
         </div>
       </footer>
     </div>
@@ -111,11 +111,5 @@
   <script src="{{asset('assets/js/core/bootstrap-material-design.min.js')}}"></script>
   <script src="{{asset('assets/js/core/perfect-scrollbar.min.js')}}"></script>
   <script src="{{asset('assets/js/core/material-dashboard.js?v=2.2.2')}}" type="text/javascript"></script>
-  <script>
-
-         $(document).ready(function(){
-    $('#miModal').modal('show');
-  });
-  </script>
 </div>
 @endsection

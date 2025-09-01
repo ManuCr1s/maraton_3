@@ -14,7 +14,7 @@
 .carousel {
 	 height: 100%;
 	 position: relative;
-	 background-color: #ff1953;
+	 background-color: #050707;
 	 animation: background 20s ease infinite;
 }
  .carousel__slide {
@@ -124,31 +124,31 @@
 }
  @keyframes background {
 	 0% {
-		 background-color: #f2aa18;
+		 background-color: #1C1C1D;
 	}
 	 5% {
-		 background-color: #ff1953;
+		 background-color: #1C1C1D;
 	}
 	 25% {
-		 background-color: #ff1953;
+		 background-color: #1C1C1D;
 	}
 	 30% {
-		 background-color: #5319ff;
+		 background-color: #1C1C1D;
 	}
 	 50% {
-		 background-color: #5319ff;
+		 background-color: #1C1C1D;
 	}
 	 55% {
-		 background-color: #13bf94;
+		 background-color: #1C1C1D;
 	}
 	 75% {
-		 background-color: #13bf94;
+		 background-color: #1C1C1D;
 	}
 	 80% {
-		 background-color: #f2aa18;
+		 background-color: #1C1C1D;
 	}
 	 100% {
-		 background-color: #f2aa18;
+		 background-color: #1C1C1D;
 	}
 }
  @keyframes marker {
