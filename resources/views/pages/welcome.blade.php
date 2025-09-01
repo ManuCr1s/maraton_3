@@ -58,7 +58,7 @@
           <div class="row justify-content-center">
               <div class="col-12">
                       <h6 class="m-0 text-secondary text-center">FECHA MAXIMA DE INSCRIPCION</h6>
-                      <h2 class="m-0 text-center"><b>09 DE NOVIEMBRE DEL 2024</b></h2>
+                      <h2 class="m-0 text-center"><b>24 DE OCTUBRE DEL 2025</b></h2>
               </div>
             
           </div>

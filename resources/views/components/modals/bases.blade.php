@@ -305,6 +305,7 @@ a las bases establecidas</p>
                       <p class="text-left m-0">Los atletas ganadores en las categorías deberán presentar su DNI original para su premiación.</p>
                     </li>
                   </ul>
+                  <x-tables.awards/>
                   <br>
                   <h6 class="text-left"><b>Artículo 11. VEHICULOS EN EL RECORRIDO</b></h6>
                   <p class="text-left m-0">

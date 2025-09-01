@@ -1,8 +1,8 @@
 import 'simplycountdown.js/dist/simplyCountdown.min.js';
 simplyCountdown('#count', {
     year: 2025, // required
-    month: 11, // required
-    day: 10, // required
+    month: 10, // required
+    day: 26, // required
     hours: 0, // Default is 0 [0-23] integer
     minutes: 0, // Default is 0 [0-59] integer
     seconds: 0, // Default is 0 [0-59] integer

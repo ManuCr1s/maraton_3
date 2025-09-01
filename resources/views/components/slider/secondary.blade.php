@@ -26,7 +26,7 @@
 	</article>
 	<article class="carousel__slide carousel__slide--03">
 		<h3 class="text-secondary">¡No tengas miedo!</h3>
-		<p>La victoria es para ti</p>
+		<p>La victoria es tuya</p>
 	</article>
 	<article class="carousel__slide carousel__slide--04">	
 		<h3 class="text-secondary">¡No hay limites!</h3>
