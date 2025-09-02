@@ -8,14 +8,25 @@
   box-sizing: border-box;
 }
 /***/
+  .main-content{
+    position: relative;
+    z-index: 2;
+  }
+    .content-footer{
+    min-height: 30vh;
+    height: 100%;
+  }
 .icon-subtitle{
-  color:#7c9f78;
+  color:#ff9800;
 }
 .carousel {
 	 height: 100%;
 	 position: relative;
-	 background-color: #050707;
-	 animation: background 20s ease infinite;
+  background-image: url('../img/maraton_slider02.png');
+   background-repeat: no-repeat;   /* No se repite */
+  background-position: center;    /* Centrada */
+  background-size: contain;
+/* 	 animation: background 20s ease infinite; */
 }
  .carousel__slide {
 	 display: flex;
@@ -44,10 +55,13 @@
 	 animation-delay: 15s;
 }
  .carousel__slide h2 {
-	 margin-bottom: 0.25em;
-	 font-size: 4.8em;
-	 font-weight: 700;
-	 line-height: 1.2;
+    position: absolute;
+    top:80%;
+    left: 0;
+    margin-bottom: 0.25em;
+    font-size: 2.4em;
+    font-weight: 700;
+    line-height: 1.2;
 }
  .carousel__slide p {
 	 max-width: 30em;
@@ -124,31 +138,31 @@
 }
  @keyframes background {
 	 0% {
-		 background-color: #1C1C1D;
+		 background-color: #0c4575;
 	}
 	 5% {
-		 background-color: #1C1C1D;
+		 background-color: #2c6d9b;
 	}
 	 25% {
-		 background-color: #1C1C1D;
+		 background-color: #378089;
 	}
 	 30% {
-		 background-color: #1C1C1D;
+		 background-color: #3f897b;
 	}
 	 50% {
-		 background-color: #1C1C1D;
+		 background-color: #4f9961;
 	}
 	 55% {
-		 background-color: #1C1C1D;
+		 background-color: #69a25d;
 	}
 	 75% {
-		 background-color: #1C1C1D;
+		 background-color: #94b554;
 	}
 	 80% {
-		 background-color: #1C1C1D;
+		 background-color: #ddb84e;
 	}
 	 100% {
-		 background-color: #1C1C1D;
+		 background-color: #ff9800;
 	}
 }
  @keyframes marker {
@@ -185,7 +199,7 @@
     .simply-amount{
         text-align: center;
         display: block;
-        color: #fff;
+        color: #ff9800;
         font-size: 60px;
         line-height: 70px;
     }
@@ -194,7 +208,7 @@
         font-size: 12px;
         font-weight: bolder;
         letter-spacing: 2px;
-        color: #7c9f78;
+        color: #0c4575;
     }
 /******/
 /**/
@@ -7061,7 +7075,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #7c9f78 !important;
+  border-color: #0c4575 !important;
 }
 
 .border-success {
@@ -9092,9 +9106,8 @@ button.bg-dark:focus {
   .m-md-auto {
     margin: auto !important;
   }
-  .main-content{
-    z-index: 2;
-  }
+
+
   .mt-md-auto,
   .my-md-auto {
     margin-top: auto !important;
@@ -9868,7 +9881,7 @@ a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #7c9f78 !important;
+  color: #0c4575 !important;
 }
 
 a.text-secondary:hover,
@@ -9922,7 +9935,7 @@ a.text-light:focus {
 }
 
 .text-dark {
-  color:#979A9A !important;
+  color:#212121 !important;
 }
 
 a.text-dark:hover,
@@ -10071,7 +10084,7 @@ a.text-dark:focus {
 
 .btn.btn-secondary {
   color: #fff;
-  background-color: #7c9f78;
+  background-color: #0c4575;
   border-color: #fff;
   letter-spacing: 10px;
   font-weight: bold;
@@ -15657,12 +15670,15 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 }
 
 .header-filter::before {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255,0.85);
 }
 .container-filter{
   background: rgb(20,20,20);
   z-index: 2;
   position: relative;
+  color: #fff;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .header-filter .container {
   z-index: 2;
@@ -16585,7 +16601,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .table-shopping>thead>tr>th {
-  font-size: 0.75rem;
+  font-size: 0.4rem;
   text-transform: uppercase;
 }
 
@@ -20835,7 +20851,7 @@ a .material-icons {
 
 .wrapper.wrapper-full-page {
   height: auto;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .login-page .footer .copyright,

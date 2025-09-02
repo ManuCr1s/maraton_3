@@ -1,5 +1,5 @@
             <div class="col-5 ml-5">
-                    <h6 class="m-0 text-secondary text-center">RESULTADOS 2023</h6>
+                    <h6 class="m-0 text-warning text-center">RESULTADOS 2023</h6>
                     <h5 class="m-0 text-center mb-4"><i class="fa-solid fa-ranking-star icon-subtitle mr-2"></i> <b>ELITE VARONES</b></h5>
                     <div class="table-responsive">
                         <table class="table table-borderless mb-4">
