@@ -16,11 +16,11 @@ export function validateForm(objeto){
 
 }
 export function sendForm(objeto){
-    if(objeto.country.val() ==='1'){
-        if(valueInput(objeto.region)&& objeto.region.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Region'}}
-        if(valueInput(objeto.province)&& objeto.province.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Provincia'}}
-        if(valueInput(objeto.district)&& objeto.district.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Distrito'}}
-    }
+  
+    if(valueInput(objeto.region)&& objeto.region.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Region o si es extranjero selecconar NINGUNA'}}
+    if(valueInput(objeto.province)&& objeto.province.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Provincia o si es extranjero selecconar NINGUNA'}}
+    if(valueInput(objeto.district)&& objeto.district.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Seleccione Distrito o si es extranjero selecconar NINGUNA'}}
+    
     if(inputNull(objeto.phone)&& objeto.phone.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Numero de Celular'}}
    if(inputNull(objeto.addresd)&& objeto.addresd.closest('fieldset').css('display') === 'block'){return {status:true,message:'Por favor Ingrese Direccion'}}
     return {status:false}

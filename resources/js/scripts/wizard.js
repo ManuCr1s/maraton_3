@@ -185,68 +185,68 @@ $(".submit").click(function(e){
 						allowOutsideClick: false,
 					  })
 				}else{
-					Swal.fire({
+					  Swal.fire({
 						icon: "success",
 						title: 'Muchas Felicidades',
 						text: data.message,
 						allowOutsideClick: false,
-						confirmButtonText: "DESCARGAR CODIGO",
+						confirmButtonText: "DESCARGAR FORMATOS",
 					}).then((result) => {
-						var doc = new jsPDF()
-						doc.setFontSize(22);
-						doc.setFontSize(15);
-						doc.setTextColor(127, 140, 141);
-						doc.text('MARATON INTERNACIONAL MESETA DEL BOMBON', 45, 20);
-						doc.setDrawColor(204, 209, 209 );
-						doc.line(70, 25, 150, 25);
-						doc.setFontSize(65);
-						doc.setTextColor(2, 50, 133);
-						doc.text(data.ins, 80, 55);
-						doc.setFontSize(10);
-						doc.setTextColor(2, 50, 133);
-						doc.text('NUMERO DE INSCRITO', 90,65);
-						doc.setDrawColor(255,0,0);
-						doc.rect(45, 75, 130, 30, 'F');   
-						doc.save('Inscripcion.pdf');
+						switch (data.cod) {
+							case '1':
+								window.open(route.may, '_blank');
+								break;
+							case '2':
+								window.open(route.may, '_blank');
+							break;
+							case '3':
+								window.open(route.may, '_blank');
+							break;
+							case '11':
+								window.open(route.may, '_blank');
+							break;
+							default:
+								window.open(route.men, '_blank');
+								break;
+						}
 						if (result.isConfirmed) {
 							Swal.fire({
 								icon: "success",
 								title: 'Muchas Felicidades',
 								text: data.message,
 								allowOutsideClick: false,
-								confirmButtonText: "DESCARGAR FORMATOS",
+								confirmButtonText: "DESCARGAR CODIGO",
 							}).then((result) => {
-								switch (data.cod) {
-									case '1':
-										window.open(route.may, '_blank');
-										break;
-									case '2':
-										window.open(route.may, '_blank');
-									break;
-									case '3':
-										window.open(route.may, '_blank');
-									break;
-									case '11':
-										window.open(route.may, '_blank');
-									break;
-									default:
-										window.open(route.men, '_blank');
-										break;
-								}
+								var doc = new jsPDF()
+								doc.setFontSize(22);
+								doc.setFontSize(15);
+								doc.setTextColor(127, 140, 141);
+								doc.text('MARATON INTERNACIONAL MESETA DEL BOMBON', 45, 20);
+								doc.setDrawColor(204, 209, 209 );
+								doc.line(70, 25, 150, 25);
+								doc.setFontSize(65);
+								doc.setTextColor(2, 50, 133);
+								doc.text(data.ins, 80, 55);
+								doc.setFontSize(10);
+								doc.setTextColor(2, 50, 133);
+								doc.text('NUMERO DE INSCRITO', 90,65);
+								doc.setDrawColor(255,0,0);
+								doc.rect(45, 75, 130, 30, 'F');   
+								doc.save('Inscripcion.pdf');
 								if (result.isConfirmed) {
 									Swal.fire({
 										icon: "success",
 										title: "Enhorabuena",
-										text: "No olvide rrellenar y llevar los formatos un dia antes de la maraton",
+										text: "No olvide rellenar y llevar los formatos un dia antes de la maraton",
 										confirmButtonText: "VOLVER A LA INSCRIPCION",
 										allowOutsideClick: false,
 									}).then((result) => {
 											  location.reload();
 									}) 
 								} 
-							  });
-						}  
-					  });
+							});
+						}
+					});
 				}
 			}
 		});

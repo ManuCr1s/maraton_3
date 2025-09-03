@@ -33,15 +33,15 @@
                             <select  class="form-control form-step__control" id="level">
                                 <option value="0" selected>SELECCIONE</option>
                                 <option value="1">ELITE VARONES - 42,195KM</option>
-                                
-                        
+                                <option value="2">ELITE MUJERES - 21KM</option>
                                 <option value="3">MASTER - 15KM</option>
                                 <option value="4">JUVENILES - 12KM</option>
                                 <option value="5">MENORES - 6KM</option>
                                 <option value="6">JUNIOR - 2KM</option>
-                            
+                                <option value="6">INFANTIL - 1KM</option>
                                 <option value="8">HABILIDADES ESPECIALES SORDO Y MUDO - 5KM</option>
                                 <option value="9">HABILIDADES ESPECIALES CON CEGUERA - 2KM</option>
+                                <option value="11">SUPER MASTER - 5KM</option>
                             </select>
                             <br>
                             <h6 class="form-step__label">SEXO</h6>
