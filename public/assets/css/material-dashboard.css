@@ -22,7 +22,7 @@
 .carousel {
 	 height: 100%;
 	 position: relative;
-  background-image: url('../img/maraton_slider02.png');
+  background-image: url('../img/maraton7.jpeg');
    background-repeat: no-repeat;   /* No se repite */
   background-position: center;    /* Centrada */
   background-size: contain;
@@ -59,7 +59,7 @@
     top:80%;
     left: 0;
     margin-bottom: 0.25em;
-    font-size: 2.4em;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 1.2;
 }
