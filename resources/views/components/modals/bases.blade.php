@@ -4,9 +4,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="" id="staticBackdropLabel"><b>BASES DE LA XLII VERSIÓN DE LA MARATÓN INTERNACIONAL MESETA DEL BOMBÓN “LA MAS ALTA DEL MUNDO</b></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+
       </div>
       <div class="modal-body">
             <h6 class="text-left"><b>Artículo 1. ORGANIZACIÓN</b></h6>

@@ -108,7 +108,41 @@
     <tr><td>4</td><td>S/ 200.00</td><td>S/ 200.00</td><td>S/ 400.00</td></tr>
     <tr><td>5</td><td>S/ 150.00</td><td>S/ 150.00</td><td>S/ 300.00</td></tr>
     <tr class="total"><td colspan="5"><strong>TOTAL</strong></td><td><strong>S/ 2,000.00</strong></td></tr>
-
+    <tr>
+      <td rowspan="7">HABILIDADES ESPECIALES<br>CEGUERA (2KM) <br> SORDO Y MUDO (5KM)</td>
+      <td rowspan="3">HABILIDADES ESPECIALES (CEGUERA)</td>
+      <td>1</td>
+      <td>S/ 1,000.00</td>
+      <td>S/ 1,000.00</td>
+      <td>S/ 2,000.00</td>
+    </tr>
+    <tr><td>2</td><td>S/ 750.00</td><td>S/ 750.00</td><td>S/ 1,500.00</td></tr>
+    <tr><td>3</td><td>S/ 500.00</td><td>S/ 500.00</td><td>S/ 1,000.00</td></tr>
+    <tr class="total"><td colspan="4"><strong>TOTAL</strong></td><td><strong>S/ 4,500.00</strong></td></tr>
+    <tr><td rowspan="3">HABILIDADES ESPECIALES (SORDO Y MUDO)</td><td>1</td><td>S/ 750.00</td><td>S/ 750.00</td><td>S/ 1,500.00</td></tr>
+    <tr><td>2</td><td>S/ 500.00</td><td>S/ 500.00</td><td>S/ 1,000.00</td></tr>
+    <tr><td>3</td><td>S/ 250.00</td><td>S/ 250.00</td><td>S/ 500.00</td></tr>
+    <tr class="total"><td colspan="5"><strong>TOTAL</strong></td><td><strong>S/ 3,000.00</strong></td></tr>
+    <tr>
+      <td rowspan="3" colspan="2">MEJORES PASQUEÑOS-ELITE<br>VARONES (42,195 KM) <br> MUJERES (21 KM)</td>
+      <td>1</td>
+      <td>S/ 2,000.00</td>
+      <td>S/ 2,000.00</td>
+      <td>S/ 4,000.00</td>
+    </tr>
+    <tr><td>2</td><td>S/ 1,500.00</td><td>S/ 1,500.00</td><td>S/ 3,000.00</td></tr>
+    <tr><td>3</td><td>S/ 1,000.00</td><td>S/ 1,000.00</td><td>S/ 2,000.00</td></tr>
+    <tr class="total"><td colspan="5"><strong>TOTAL</strong></td><td><strong>S/ 9,000.00</strong></td></tr>
+    <tr>
+      <td rowspan="3" colspan="2">MEJORES PASQUEÑOS-JUVENILES<br>VARONES Y MUJERES (12KM)</td>
+      <td>1</td>
+      <td>S/ 1,000.00</td>
+      <td>S/ 1,000.00</td>
+      <td>S/ 2,000.00</td>
+    </tr>
+    <tr><td>2</td><td>S/ 800.00</td><td>S/ 800.00</td><td>S/ 1,600.00</td></tr>
+    <tr><td>3</td><td>S/ 500.00</td><td>S/ 500.00</td><td>S/ 1,000.00</td></tr>
+    <tr class="total"><td colspan="5"><strong>TOTAL</strong></td><td><strong>S/ 4,600.00</strong></td></tr>
 
 </tbody>
 
