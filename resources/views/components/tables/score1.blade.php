@@ -41,13 +41,13 @@
                                     <th scope="row" class="text-center text-white">2</th>
                                     <td colspan="2" class="text-white">RAMOS ACEVEDO, ZAIDA DINA</td>
                                     <td class="text-white">1h28m34s</td>
-                                    <td class="text-white">PASCO</td>
+                                    <td class="text-white">HUANCAVELICA</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-center text-white">3</th>
                                     <td colspan="2" class="text-white">ROJAS RAMOS, FLOR DE MARIA</td>
                                     <td class="text-white">1h29m15s</td>
-                                    <td class="text-white">PASCO</td>
+                                    <td class="text-white">JUNIN</td>
                                 </tr> 
                             </tbody>
                         </table>

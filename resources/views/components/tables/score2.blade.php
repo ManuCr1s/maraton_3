@@ -41,7 +41,7 @@
                                     <th scope="row" class="text-center text-white">2</th>
                                     <td colspan="2" class="text-white">EULOGIO PAUCAR, SHEYLA</td>
                                     <td class="text-white">1h26m45s</td>
-                                    <td class="text-table_info">JUNIN</td>
+                                    <td class="text-white">JUNIN</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-center text-white">3</th>
