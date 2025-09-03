@@ -33,6 +33,11 @@ export function searchInscription(a,b){
                             cancelButtonText: "CANCELAR DESCARGA",
                             allowOutsideClick: false,
                             confirmButtonText: "DESCARGAR CODIGO",
+                            customClass: {
+                                confirmButton: 'btn btn-sm btn-warning',   // clase para botón confirmar
+                                cancelButton: 'btn btn-sm btn-danger'      // clase para botón cancelar
+                            },
+                            buttonsStyling: false
                         }).then(
                                 (result) => {
                                 if (result.isConfirmed) {
@@ -60,6 +65,11 @@ export function searchInscription(a,b){
                                         cancelButtonText: "CANCELAR DESCARGA",
                                         showCancelButton: true,
                                         confirmButtonText: "DESCARGAR FORMATOS",
+                                        customClass: {
+                                                confirmButton: 'btn btn-sm btn-warning',   // clase para botón confirmar
+                                                cancelButton: 'btn btn-sm btn-danger'      // clase para botón cancelar
+                                            },
+                                        buttonsStyling: false
                                     }).then(
                                         (result) => {
                                             if (result.isConfirmed) {
@@ -86,6 +96,11 @@ export function searchInscription(a,b){
                                                     text: "No olvide rrellenar y llevar los formatos un dia antes de la maraton",
                                                     confirmButtonText: "VOLVER A LA INSCRIPCION",
                                                     allowOutsideClick: false,
+                                                     customClass: {
+                                                        confirmButton: 'btn btn-sm btn-warning',   // clase para botón confirmar
+                                         
+                                                    },
+                                                    buttonsStyling: false
                                                 }).then(
                                                     (result) => {
                                                         location.reload();

@@ -1,14 +1,14 @@
 
-        <div class="col-4">
+<!--         <div class="col-4">
                 <h6 class="text-title-total col-12"><center>TOTAL DE INSCRITOS A LA MARATON </center></h6>
                 <span class="text-title-number col-12 d-flex justify-content-center" id="total_maraton"></span>
         </div>
         <a type="button" class="col-4 button button--orange" data-toggle="modal" data-target="#staticBackdrop">
                 <i class="fa-solid fa-print icon"></i>VERIFICA TU INSCRIPCION
-        </a>
+        </a> -->
 
 
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modalVerification" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
                 <div class="modal-content">
                         <div class="modal-header">
@@ -26,8 +26,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR FORMULARIO</button>
-                                    <button type="submit" class="btn btn-primary">ENVIAR INFORMACION</button>
+                                    <button type="button" class="btn btn-sm btn-danger mr-3" data-dismiss="modal">CERRAR FORMULARIO</button>
+                                    <button type="submit" class="btn btn-sm btn-warning">CONSULTAR INSCRIPCION</button>
                                 </div>
                         </form>
                 </div>

@@ -343,7 +343,7 @@ la Comisión Organizadora es autónoma en sus decisiones para resolver casos com
                   </p>
       </div>
       <div class="modal-footer">
-
+<!--          <a href="{{route('download',['nombreArchivo' => 'BASES_MARATON_2025.pdf'])}}" class="btn btn-warning">Descargar Bases del Concurso</a> -->
         <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar Bases del Concurso</button>
    
       </div>

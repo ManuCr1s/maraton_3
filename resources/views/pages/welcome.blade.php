@@ -5,6 +5,7 @@
   <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 @endsection
 @section('container')
+ <x-modals.main/>  
 <div class="off-canvas-sidebar">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top text-white mb-5">
@@ -35,7 +36,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a href="#" class="nav-link">
+            <a type="button"  class="nav-link" data-toggle="modal" data-target="#modalVerification">
               <i class="material-icons text-secondary">fingerprint</i>
               <h5 class="m-0  text-secondary">Verifica</h5>
               <div class="text-dark">Comprueba tu Inscripcion</div>
@@ -118,12 +119,5 @@
         </div>
     </div>
   </div>
-
-  <!--   Core JS Files   -->
-  <script src="{{asset('assets/js/core/jquery.min.js')}}"></script>
-  <script src="{{asset('assets/js/core/popper.min.js')}}"></script>
-  <script src="{{asset('assets/js/core/bootstrap-material-design.min.js')}}"></script>
-  <script src="{{asset('assets/js/core/perfect-scrollbar.min.js')}}"></script>
-  <script src="{{asset('assets/js/core/material-dashboard.js?v=2.2.2')}}" type="text/javascript"></script>
 </div>
 @endsection
