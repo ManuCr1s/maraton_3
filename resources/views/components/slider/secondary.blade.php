@@ -26,19 +26,19 @@
         <div class="col-md-5 col-sm-12">
                 <section class="carousel">
 	<article class="carousel__slide carousel__slide--01">
-		<h2 class="text-secondary">¡Estas Listo!</h2>
+		<h2 class="text-white">¡Estas Listo!</h2>
 		<p></p>
 	</article>
 	<article class="carousel__slide carousel__slide--02">
-		<h2 class="text-secondary">¡Preparate!</h2>
+		<h2 class="text-white">¡Estas Preparado!</h2>
 		<!-- <p>Para creer en ti mismo y en todo lo que eres</p> -->
 	</article>
 	<article class="carousel__slide carousel__slide--03">
-		<h2 class="text-secondary">¡No tengas miedo!</h2>
+		<h2 class="text-whie">¡Maximo Esfuerzo!</h2>
 <!-- 		<p>La victoria es tuya</p> -->
 	</article>
 	<article class="carousel__slide carousel__slide--04">	
-		<h2 class="text-secondary">¡No hay limites!</h2>
+		<h2 class="text-white">¡No hay limites!</h2>
 		<!-- <p>Cuanto más difícil sea la victoria, mayor será la felicidad de ganar</p> -->
 	</article> 
 	<ul class="carousel__pager">
