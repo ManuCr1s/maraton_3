@@ -13,7 +13,7 @@
       <div class="navbar-wrapper">
         <a href="#"><img src="{{asset('assets/img/munipasco_maraton.png')}}" alt=""></a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler text-secondary bg-secondary p-3" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="navbar-toggler-icon icon-bar"></span>
         <span class="navbar-toggler-icon icon-bar"></span>
