@@ -12,61 +12,61 @@
             <tr>
                 <th scope="row"><h6>1</h6></th>
                 <td><h6>ELITE VARONES</h6></td>
-                <td>EV</td>
+                <td><h6>EV</h6></td>
                 <td id="EV" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>2</h6></th>
                 <td><h6>ELITE MUJERES</h6></td>
-                <td>EM</td>
+                <td><h6>EM</h6></td>
                 <td id="EM" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>3</h6></th>
                 <td><h6>SUPER MASTER</h6></td>
-                <td>SM</td>
+                <td><h6>SM</h6></td>
                 <td id="SM" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>4</h6></th>
                 <td><h6>MASTER</h6></td>
-                <td>MM</td>
+                <td><h6>MM</h6></td>
                 <td id="MM" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>5</h6></th>
                 <td><h6>JUVENILES</h6></td>
-                <td>JU</td>
+                <td><h6>JU</h6></td>
                 <td id="JU" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>6</h6></th>
                 <td><h6>JUNIOR</h6></td>
-                <td>JUN</td>
+                <td><h6>JUN</h6></td>
                 <td id="JUN" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>7</h6></th>
                 <td><h6>MENORES</h6></td>
-                <td>MEN</td>
+                <td><h6>MEN</h6></td>
                 <td id="MEN" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>8</h6></th>
                 <td><h6>INFANTIL</h6></td>
-                <td>IN</td>
+                <td><h6>IN</h6></td>
                 <td id="IN" class="text-secondary font-weight-bold"></td>
             </tr>
              <tr>
                 <th scope="row"><h6>9</h6></th>
                 <td><h6>HABILIDADES ESPECIALES CON CEGUERA</h6></td>
-                <td>HECG</td>
+                <td><h6>HECG</h6></td>
                 <td id="HECG" class="text-secondary font-weight-bold"></td>
             </tr>
              <tr>
                 <th scope="row"><h6>10</h6></th>
                 <td><h6>HABILIDADES ESPECIALES SORDO Y MUDO</h6></td>
-                <td>HESM</td>
+                <td><h6>HESM</h6></td>
                 <td id="HESM" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>

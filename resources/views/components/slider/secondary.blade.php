@@ -1,6 +1,6 @@
 <div class="row">
     
-    <div class="col-md-8 col-sm-12">
+    <div class="col-md-7 col-sm-12">
 		<div class="row">
 			<div class="col-md-7 col-sm-12">
 				<div class="ml-5 pl-3 border-left border-secondary">
@@ -23,7 +23,7 @@
 		</div>
   
     </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-5 col-sm-12">
                 <section class="carousel">
 	<article class="carousel__slide carousel__slide--01">
 		<h2 class="text-secondary">¡Estas Listo!</h2>
