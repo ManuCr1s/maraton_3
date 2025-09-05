@@ -23,23 +23,23 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="{{route('download',['nombreArchivo' => 'BASES_MARATON_2025.pdf'])}}" class="nav-link">
-              <i class="material-icons text-secondary">dashboard</i>
-              <h5 class="m-0 text-secondary">Bases</h5>
-              <div class="text-dark">Documentos de la Maraton</div>
+              <i class="material-icons text-secondary text-mobile">dashboard</i>
+              <h5 class="m-0 text-secondary text-mobile">Bases</h5>
+              <div class="text-dark text-mobile">Documentos de la Maraton</div>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{route('form')}}" class="nav-link">
-              <i class="material-icons text-secondary">person_add</i>
-              <h5 class="m-0 text-secondary">Formulario</h5>
-              <div class="text-dark">Registra tu Inscripcion aqui</div> 
+              <i class="material-icons text-secondary text-mobile">person_add</i>
+              <h5 class="m-0 text-secondary text-mobile">Formulario</h5>
+              <div class="text-dark text-mobile">Registra tu Inscripcion aqui</div> 
             </a>
           </li>
           <li class="nav-item ">
             <a type="button"  class="nav-link" data-toggle="modal" data-target="#modalVerification">
-              <i class="material-icons text-secondary">fingerprint</i>
-              <h5 class="m-0  text-secondary">Verifica</h5>
-              <div class="text-dark">Comprueba tu Inscripcion</div>
+              <i class="material-icons text-secondary text-mobile">fingerprint</i>
+              <h5 class="m-0  text-secondary text-mobile">Verifica</h5>
+              <div class="text-dark text-mobile">Comprueba tu Inscripcion</div>
             </a>
           </li>
         </ul>
@@ -49,7 +49,7 @@
   <!-- End Navbar -->
   <div class="wrapper wrapper-full-page">
     <div class="page-header pricing-page header-filter" style="background-image: url('../../assets/img/login.jpg')">
-      <div class="container-fluid main-content mt-5">
+      <div class="container-fluid main-content mt-md-5 mt-sm-1">
           <x-slider.secondary/>  
     </div>
   </div>

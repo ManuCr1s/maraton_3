@@ -8017,6 +8017,9 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
+  .text-sm-white{
+    color: white;
+  }
   .float-sm-left {
     float: left !important;
   }
@@ -29908,9 +29911,12 @@ select.selectpicker {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .cd-vertical-nav {
     display: none !important;
+  }
+  .text-mobile{
+    color: white !important;
   }
 }
 

@@ -2,7 +2,7 @@
     
     <div class="col-md-8 col-sm-12">
 		<div class="row">
-			<div class="col-7">
+			<div class="col-md-7 col-sm-12">
 				<div class="ml-5 pl-3 border-left border-secondary">
 						<h6 class="m-0 text-secondary">MARATON INTERNACIONAL</h6>
 						<h2 class="m-0 text-secondary"><b>MESETA DEL BOMBON</b></h2>
@@ -15,7 +15,7 @@
 				<h5 class="ml-5 mt-5 text-secondary"><b>LA CARRERA COMIENZA EN: </b></h5>
 				<div id="count" class="d-flex"></div>
 			</div>
-			<div class="col-5">
+			<div class="col-md-5 col-sm-12">
 			
 			<x-tables.category/>
 				

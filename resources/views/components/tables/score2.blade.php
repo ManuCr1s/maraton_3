@@ -1,4 +1,4 @@
-            <div class="col-5 ml-5">
+            <div class="col-md-5 col-sm-12 ml-md-5">
                     <h6 class="m-0 text-warning text-center">RESULTADOS 2024</h6>
                     <h5 class="m-0 text-center mb-4"><i class="fa-solid fa-ranking-star icon-subtitle mr-2"></i> <b>ELITE VARONES</b></h5>
                     <div class="table-responsive">
