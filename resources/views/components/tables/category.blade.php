@@ -36,7 +36,7 @@
             <tr>
                 <th scope="row"><h6>5</h6></th>
                 <td><h6>JUVENILES</h6></td>
-                <td>EM</td>
+                <td>JU</td>
                 <td id="JU" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
@@ -48,25 +48,25 @@
             <tr>
                 <th scope="row"><h6>7</h6></th>
                 <td><h6>MENORES</h6></td>
-                <td>EM</td>
+                <td>MEN</td>
                 <td id="MEN" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
                 <th scope="row"><h6>8</h6></th>
                 <td><h6>INFANTIL</h6></td>
-                <td>EM</td>
+                <td>IN</td>
                 <td id="IN" class="text-secondary font-weight-bold"></td>
             </tr>
              <tr>
                 <th scope="row"><h6>9</h6></th>
                 <td><h6>HABILIDADES ESPECIALES CON CEGUERA</h6></td>
-                <td>EM</td>
+                <td>HECG</td>
                 <td id="HECG" class="text-secondary font-weight-bold"></td>
             </tr>
              <tr>
                 <th scope="row"><h6>10</h6></th>
                 <td><h6>HABILIDADES ESPECIALES SORDO Y MUDO</h6></td>
-                <td>EM</td>
+                <td>HESM</td>
                 <td id="HESM" class="text-secondary font-weight-bold"></td>
             </tr>
             <tr>
