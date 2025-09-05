@@ -121,3 +121,11 @@
   </div>
 </div>
 @endsection
+@section('footer')
+<script src="{{asset('assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/core/perfect-scrollbar.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/core/material-dashboard.js')}}" type="text/javascript"></script>
+
+<script src="{{asset('assets/js/level.js')}}"></script>
+@endsection

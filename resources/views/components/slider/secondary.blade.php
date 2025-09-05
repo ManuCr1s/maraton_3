@@ -1,19 +1,29 @@
 <div class="row">
     
-    <div class="col-md-5">
-        <div class="ml-5 pl-3 border-left border-secondary">
-                <h6 class="m-0 text-secondary">MARATON INTERNACIONAL</h6>
-                <h2 class="m-0 text-secondary"><b>MESETA DEL BOMBON</b></h2>
-        </div>
-        <div class="w-75 mt-5 ml-5">
-                <p class="text-dark">La competencia de 42 kilómetros, catalogada como la más alta del mundo por encima de los 4300 metros sobre el nivel del mar, une las regiones de Junín y Pasco, con la partida en el distrito de Carhuamayo y la llegada en el Estadio Daniel Alcides Carrión de Cerro de Pasco.</p>
-                <p class="text-dark">Una competencia, creada desde de 1982, para demostrar fortaleza, disciplina, esfuerzo pero sobre todo pasion y compromiso por el deporte. </p>
-                <a class="btn btn-secondary  btn-block mt-3" href="{{route('form')}}">INSCRIBETE AQUI</a>     
-        </div>
-        <h5 class="ml-5 mt-5 text-secondary"><b>LA CARRERA COMIENZA EN: </b></h5>
-        <div id="count" class="d-flex"></div>
+    <div class="col-md-8 col-sm-12">
+		<div class="row">
+			<div class="col-7">
+				<div class="ml-5 pl-3 border-left border-secondary">
+						<h6 class="m-0 text-secondary">MARATON INTERNACIONAL</h6>
+						<h2 class="m-0 text-secondary"><b>MESETA DEL BOMBON</b></h2>
+				</div>
+				<div class="w-75 mt-5 ml-5">
+						<p class="text-dark">La competencia de 42 kilómetros, catalogada como la más alta del mundo por encima de los 4300 metros sobre el nivel del mar, une las regiones de Junín y Pasco, con la partida en el distrito de Carhuamayo y la llegada en el Estadio Daniel Alcides Carrión de Cerro de Pasco.</p>
+						<p class="text-dark">Una competencia, creada desde de 1982, para demostrar fortaleza, disciplina, esfuerzo pero sobre todo pasion y compromiso por el deporte. </p>
+						<a class="btn btn-secondary  btn-block mt-3" href="{{route('form')}}">INSCRIBETE AQUI</a>     
+				</div>
+				<h5 class="ml-5 mt-5 text-secondary"><b>LA CARRERA COMIENZA EN: </b></h5>
+				<div id="count" class="d-flex"></div>
+			</div>
+			<div class="col-5">
+			
+			<x-tables.category/>
+				
+			</div>
+		</div>
+  
     </div>
-        <div class="col-md-6">
+        <div class="col-md-4 col-sm-12">
                 <section class="carousel">
 	<article class="carousel__slide carousel__slide--01">
 		<h2 class="text-secondary">¡Estas Listo!</h2>

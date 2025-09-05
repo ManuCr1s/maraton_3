@@ -91,13 +91,12 @@ export function countMax(level){
 } */
 export function countTotal(){
     $("#preloader").show(); 
-    let count = $('#total_maraton');
+    let count = $('#tot');
     $.ajax({
         headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
         type:'POST',
         url:'/total',
         success:function(data){  
-            console.log(data);  
             count.text(data);
             $("#preloader").hide(); 
         },
