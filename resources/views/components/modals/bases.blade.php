@@ -111,22 +111,28 @@ mayor nivel competitivo por parte del sector correspondiente</p>
                 </ul>
                           <br>
               <h6 class="text-left"><b>Artículo 4. DE LAS INSCRIPCIONES</b></h6>
-              <p class="text-left m-0">Las inscripciones se realizarán a través de página web. http://maraton.munipasco.gob.pe de
+              <p class="text-left m-0">Las inscripciones se realizarán a través de página web. <b>https://maraton.munipasco.gob.pe</b> de
                 manera virtual y presencial en la oficina de Sub Gerencia de Educación, Cultura, Deportes y Juventudes de la
                 Municipalidad Provincial de Pasco y la Sub Gerencia de servicios públicos y sociales de la Municipalidad Distrital
                 de Carhuamayo de en horario de oficina.</p>
               <ul>
                 <li>
-                  <p class="text-left m-0">El periodo de inscripciones se inicia desde el 2 de setiembre hasta el jueves 23 de octubre hasta las 17.00 Horas</p>
+                  <p class="text-left m-0">El periodo de inscripciones se inicia desde el 2 de setiembre hasta el viernes 24 de octubre hasta las 17.00 Horas</p>
                 </li>
                 <li>
-                  <p class="text-left m-0">Solo se aceptará 250 participantes por categoría entre varones y mujeres</p>
+                  <p class="text-left m-0">Solo se aceptará 150 participantes varones y mujeres en las categorías (elite, master y súper master), juveniles 200 participantes.</p>
+                </li>
+                <li>
+                  <p class="text-left m-0">Solo se aceptará 225 participantes varones y mujeres en las categorías (menores, junior e infantil).</p>
+                </li>
+                <li>
+                  <p class="text-left m-0">Solo se aceptará 100 participantes varones y mujeres en las categorías habilidades especiales.</p>
                 </li>
                 <li>
                   <p class="text-left m-0">Copia de DNI y/o pasaporte de extranjería vigente</p>
                 </li>
                 <li>
-                  <p class="text-left m-0">Carnet de CONADIS color amarillo (solo para las personas discapacitadas)</p>
+                  <p class="text-left m-0">Carnet de CONADIS color amarillo y certificado de discapacidad severa (solo para las personas discapacitadas)</p>
                 </li>
                 <li>
                   <p class="text-left m-0">Examen médico de tener buena salud</p>
