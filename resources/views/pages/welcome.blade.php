@@ -113,10 +113,14 @@
                             <h6 class="m-0 text-secondar">NUESTROS</h6>
                             <h2 class="m-0 text-secondary"><b>AUSPICIADORES SON</b></h2>
                     </div>
-              </div>
-            
+              </div> 
           </div>
-        </div>
+          <div class="row pl-5">
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="" class="my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="" class="my-5 mx-2"></div>
+          </div>
+      </div>
+
     </div>
   </div>
 </div>

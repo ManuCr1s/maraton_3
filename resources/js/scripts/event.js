@@ -10,7 +10,7 @@ $(document).ready(function(){
     chainSelected(APP_INPUT.level,APP_INPUT.gender);
     chainLocation(APP_INPUT.region,APP_INPUT.province,route.province);
     chainLocation(APP_INPUT.province,APP_INPUT.district,route.district);
-    chainCountryLocation(APP_INPUT.country,$('#location'),$('#seachdni'),$('#names'),$('#step-2'),APP_INPUT.type);
+    chainCountryLocation(APP_INPUT.country,$('#seachdni'),$('#names'),$('#step-2'),APP_INPUT.type);
     APP_INPUT.number.on('keypress',onlyNumbers);
     APP_INPUT.phone.on('keypress',onlyNumbers);
 });
