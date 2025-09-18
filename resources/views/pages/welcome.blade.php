@@ -118,6 +118,7 @@
           <div class="row pl-5">
               <div class="col-md-3"><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="" class="my-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="" class="my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/sanapukio.png')}}" alt="" class="my-5 mx-2"></div>
           </div>
       </div>
 
