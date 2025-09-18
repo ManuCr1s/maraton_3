@@ -10,7 +10,7 @@
             <div class="row title__secondary">MARATON INTERNACIONAL</div>
             <div class="row title__main">MESETA DEL</div>
             <div class="row title__main--main">BOMBON</div>
-            <div class="row title__secondary">NOVIEMBRE 10, 2025</div>
+            <div class="row title__secondary">OCTUBRE 26, 2025</div>
         </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
