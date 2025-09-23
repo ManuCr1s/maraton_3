@@ -122,7 +122,7 @@
               <div class="col-md-3"><img src="{{asset('assets/img/logo/milpo.png')}}" alt="" class="my-5 mx-2"></div>
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/leidy.png')}}" alt="" class="my-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="" class="my-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/gore.png')}}" alt="" class="my-5 mx-2"></div>
               <div class="col-md-3"></div>
