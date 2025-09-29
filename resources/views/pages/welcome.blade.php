@@ -116,16 +116,16 @@
               </div> 
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/sanapukio.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/milpo.png')}}" alt="" class="my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="MUNICIPALIDAD PROVINCIAL DE PASCO" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="NOPAL" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/sanapukio.png')}}" alt="AGUA SANAPUKIO" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/milpo.png')}}" alt="MILPOCOOP" class="w-50 my-5 mx-2"></div>
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/leidy.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/gore.png')}}" alt="" class="my-5 mx-2"></div>
-              <div class="col-md-3"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/leidy.png')}}" alt="LEIDY" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="MUNICIPALIDAD DE CARHUAMAYO" class="w-50 y-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/gore.png')}}" alt="GOBIERNO REGIONAL DE PASCO" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/elcajacho.png')}}" alt="RESTAURANTE EL CAJACHO" class="w-50 my-5 mx-2"></div>
           </div>
       </div>
 
