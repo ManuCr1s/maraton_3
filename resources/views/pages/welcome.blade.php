@@ -106,7 +106,7 @@
   </div>
    <div class="">
     <div class="pricing-page header-filter" style="background-image: url('../../assets/img/maraton_6.jpg')">
-      <div class="container-fluid main-content">
+      <div class="container-flui main-content">
           <div class="row justify-content-center">
               <div class="col-12">
                       <div class="ml-5 pl-3 border-left border-secondary">
@@ -126,6 +126,12 @@
               <div class="col-md-3"><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="MUNICIPALIDAD DE CARHUAMAYO" class="w-50 y-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/gore.png')}}" alt="GOBIERNO REGIONAL DE PASCO" class="w-50 my-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/elcajacho.png')}}" alt="RESTAURANTE EL CAJACHO" class="w-50 my-5 mx-2"></div>
+          </div>
+          <div class="row pl-5">
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/alquitara.png')}}" alt="ALQUITARA" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
           </div>
       </div>
 
