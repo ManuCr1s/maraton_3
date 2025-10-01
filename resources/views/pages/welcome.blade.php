@@ -129,7 +129,7 @@
           </div>
           <div class="row pl-5">
               <div class="col-md-3"><img src="{{asset('assets/img/logo/alquitara.png')}}" alt="ALQUITARA" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/salka.png')}}" alt="ALQUITARA" class="w-50 my-5 mx-2"></div>
               <div class="col-md-3"></div>
               <div class="col-md-3"></div>
           </div>
