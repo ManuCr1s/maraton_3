@@ -133,6 +133,18 @@
               <div class="col-md-3"><img src="{{asset('assets/img/logo/ipd.png')}}" alt="IPD" class="w-50 my-5 mx-2"></div>
               <div class="col-md-3"><img src="{{asset('assets/img/logo/alquitaravip.png')}}" alt="ALQUITARA VIP" class="w-50 my-5 mx-2"></div>
           </div>
+          <div class="row pl-5">
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/undac.png')}}" alt="UNDAC" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/zapatillas.png')}}" alt="MUNDO ZAPATILLAS" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/tecnomin.png')}}" alt="TECNOMIN" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/ecosem.png')}}" alt="ECOSEM" class="w-50 my-5 mx-2"></div>
+          </div>
+              <div class="row pl-5">
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/cajamaynas.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+          </div>
       </div>
 
     </div>
