@@ -105,7 +105,7 @@
     </div>
   </div>
    <div class="">
-    <div class="pricing-page header-filter" style="background-image: url('../../assets/img/maraton_6.jpg')">
+    <div class="pricing-page header-filter" style="background-image: url('../../assets/img/maraton_6.jpg');">
       <div class="container-flui main-content">
           <div class="row justify-content-center">
               <div class="col-12">
@@ -141,8 +141,8 @@
           </div>
               <div class="row pl-5">
               <div class="col-md-3"><img src="{{asset('assets/img/logo/cajamaynas.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/quiulacocha.png')}}" alt="QUIULACOCHA" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><img src="{{asset('assets/img/logo/copseñor.png')}}" alt="COOPERATIVA SEÑOR DE LOS MILAGROS" class="w-50 my-5 mx-2"></div>
               <div class="col-md-3"></div>
           </div>
       </div>
