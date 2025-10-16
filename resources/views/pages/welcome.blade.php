@@ -116,34 +116,34 @@
               </div> 
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="MUNICIPALIDAD PROVINCIAL DE PASCO" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="NOPAL" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/sanapukio.png')}}" alt="AGUA SANAPUKIO" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/milpo.png')}}" alt="MILPOCOOP" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/hmpp_2.png')}}" alt="MUNICIPALIDAD PROVINCIAL DE PASCO" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/mopal_2.png')}}" alt="NOPAL" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/sanapukio.png')}}" alt="AGUA SANAPUKIO" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/milpo.png')}}" alt="MILPOCOOP" class="w-50 my-5 mx-2"></center></div>
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/leidy.png')}}" alt="LEIDY" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="MUNICIPALIDAD DE CARHUAMAYO" class="w-50 y-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/gore.png')}}" alt="GOBIERNO REGIONAL DE PASCO" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/elcajacho.png')}}" alt="RESTAURANTE EL CAJACHO" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/leidy.png')}}" alt="LEIDY" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/carhuamayo.png')}}" alt="MUNICIPALIDAD DE CARHUAMAYO" class="w-50 y-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/gore.png')}}" alt="GOBIERNO REGIONAL DE PASCO" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/elcajacho.png')}}" alt="RESTAURANTE EL CAJACHO" class="w-50 my-5 mx-2"></center></div>
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/alquitara.png')}}" alt="ALQUITARA" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/salka.png')}}" alt="SALKA" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/ipd.png')}}" alt="IPD" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/alquitaravip.png')}}" alt="ALQUITARA VIP" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/alquitara.png')}}" alt="ALQUITARA" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/salka.png')}}" alt="SALKA" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/ipd.png')}}" alt="IPD" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/alquitaravip.png')}}" alt="ALQUITARA VIP" class="w-50 my-5 mx-2"></center></div>
           </div>
           <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/undac.png')}}" alt="UNDAC" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/zapatillas.png')}}" alt="MUNDO ZAPATILLAS" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/tecnomin.png')}}" alt="TECNOMIN" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/ecosem.png')}}" alt="ECOSEM" class="w-50 my-5 mx-2"></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/undac.png')}}" alt="UNDAC" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/zapatillas.png')}}" alt="MUNDO ZAPATILLAS" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/tecnomin.png')}}" alt="TECNOMIN" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/ecosem.png')}}" alt="ECOSEM" class="w-50 my-5 mx-2"></center></div>
           </div>
               <div class="row pl-5">
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/cajamaynas.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/quiulacocha.png')}}" alt="QUIULACOCHA" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"><img src="{{asset('assets/img/logo/copseñor.png')}}" alt="COOPERATIVA SEÑOR DE LOS MILAGROS" class="w-50 my-5 mx-2"></div>
-              <div class="col-md-3"></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/cajamaynas.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/quiulacocha.png')}}" alt="QUIULACOCHA" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/copseñor.png')}}" alt="COOPERATIVA SEÑOR DE LOS MILAGROS" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/cultura.png')}}" alt="MINISTERIO DE CULTURA" class="w-50 my-5 mx-2"></center></div>
           </div>
       </div>
 
