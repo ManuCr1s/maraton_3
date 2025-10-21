@@ -76,12 +76,12 @@ class RegisterController extends Controller
         $number = Register::where('status', 'true')->where('id_level', $request->input('level'))->count();
         switch ($request->input('level')) {
             case '11':
-                if($number>100){
+                if($number>149){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '1':
-                if($number>109){
+                if($number>149){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
@@ -91,37 +91,37 @@ class RegisterController extends Controller
                 }
                 break;
             case '3':
-                if($number>179){
+                if($number>149){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '4':
-                if($number>119){
+                if($number>174){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '5':
-                if($number>179){
+                if($number>224){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '6':
-                if($number>119){
+                if($number>224){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '7':
-                if($number>169){
+                if($number>199){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta categoria']]]); 
                 }
                 break;
             case '8':
-                if($number>50){
+                if($number>49){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
             case '9':
-                if($number>50){
+                if($number>49){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;

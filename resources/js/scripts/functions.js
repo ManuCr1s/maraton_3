@@ -35,25 +35,25 @@ export function countMax(level){
     });
     switch (level.val()) {
         case '11':
-            return valuesObject['SM']>100; 
+            return valuesObject['SM']>149; 
         case '1':
-            return valuesObject['EV']>109; 
+            return valuesObject['EV']>149; 
         case '2':
-            return valuesObject['EM']>50;  
+            return valuesObject['EM']>149;  
         case '3':
-            return valuesObject['MM']>179; 
+            return valuesObject['MM']>149; 
         case '4':
-            return valuesObject['JU']>119; 
+            return valuesObject['JU']>174; 
         case '5':
-            return valuesObject['MEN']>179; 
+            return valuesObject['MEN']>224; 
         case '6':
-            return valuesObject['JUN']>119; 
+            return valuesObject['JUN']>224; 
         case '7':
-            return valuesObject['IN']>169; 
+            return valuesObject['IN']>199; 
         case '8':
-            return valuesObject['HESM']>50; 
+            return valuesObject['HESM']>49; 
         case '9':
-            return valuesObject['HECG']>50; 
+            return valuesObject['HECG']>49; 
     }
 }
 /* export function levelMax(level){
