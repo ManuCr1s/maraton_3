@@ -105,7 +105,7 @@
     </div>
   </div>
    <div class="">
-    <div class="pricing-page header-filter" style="background-image: url('../../assets/img/maraton_6.jpg');">
+    <div class="pricing-page header-filter" >
       <div class="container-flui main-content">
           <div class="row justify-content-center">
               <div class="col-12">
@@ -139,14 +139,19 @@
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/tecnomin.png')}}" alt="TECNOMIN" class="w-50 my-5 mx-2"></center></div>
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/ecosem.png')}}" alt="ECOSEM" class="w-50 my-5 mx-2"></center></div>
           </div>
-              <div class="row pl-5">
+          <div class="row pl-5">
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/cajamaynas.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></center></div>
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/quiulacocha.png')}}" alt="QUIULACOCHA" class="w-50 my-5 mx-2"></center></div>
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/copseñor.png')}}" alt="COOPERATIVA SEÑOR DE LOS MILAGROS" class="w-50 my-5 mx-2"></center></div>
               <div class="col-md-3"><center><img src="{{asset('assets/img/logo/cultura.png')}}" alt="MINISTERIO DE CULTURA" class="w-50 my-5 mx-2"></center></div>
           </div>
+          <div class="row pl-5">
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/carlitos.png')}}" alt="CAJA MAYNAS" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/astecarp.png')}}" alt="QUIULACOCHA" class="w-50 my-5 mx-2"></center></div>
+              <div class="col-md-3"><center><img src="{{asset('assets/img/logo/artesano.png')}}" alt="COOPERATIVA SEÑOR DE LOS MILAGROS" class="w-50 my-5 mx-2"></center></div>
+          </div>
       </div>
-
+</div>
     </div>
   </div>
 </div>
