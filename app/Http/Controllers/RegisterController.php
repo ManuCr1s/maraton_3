@@ -86,7 +86,7 @@ class RegisterController extends Controller
                 }
                 break;
             case '2':
-                if($number>50){
+                if($number>149){
                     return json_encode(['level' => [['status'=>false,'message' =>'Lamentamos comunicarle que ya no se puede registrar a esta Categoria']]]); 
                 }
                 break;
