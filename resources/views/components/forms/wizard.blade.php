@@ -32,7 +32,7 @@
                             <h6 class="form-step__label">CATEGORIA</h6>
                             <select  class="form-control form-step__control" id="level">
                                 <option value="0" selected>SELECCIONE</option>
-                                <option value="1">ELITE VARONES - 42,195KM</option>
+                                <!-- <option value="1">ELITE VARONES - 42,195KM</option> -->
                                 <option value="2">ELITE MUJERES - 21KM</option>
                                 <option value="3">MASTER - 15KM</option>
                                 <option value="4">JUVENILES - 12KM</option>
