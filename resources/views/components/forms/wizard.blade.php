@@ -38,7 +38,7 @@
                                 <option value="4">JUVENILES - 12KM</option>
                                 <option value="5">MENORES - 6KM</option>
                                 <option value="6">JUNIOR - 2KM</option>
-                                <option value="7">INFANTIL - 1KM</option>
+                             <!--    <option value="7">INFANTIL - 1KM</option> -->
                                 <option value="8">HABILIDADES ESPECIALES SORDO Y MUDO - 5KM</option>
                                 <option value="9">HABILIDADES ESPECIALES CON CEGUERA - 2KM</option>
                                 <option value="11">SUPER MASTER - 5KM</option>
