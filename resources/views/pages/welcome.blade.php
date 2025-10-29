@@ -25,7 +25,7 @@
             <a href="{{route('download',['nombreArchivo' => 'BASES_MARATON_2025.pdf'])}}" class="nav-link">
               <i class="material-icons text-secondary text-mobile">dashboard</i>
               <h5 class="m-0 text-secondary text-mobile">Bases</h5>
-              <div class="text-dark text-mobile">Documentos de la Maraton</div>
+              <div class="text-dark text-mobile">Documentos de la Maratonnnnn</div>
             </a>
           </li>
           <li class="nav-item">
